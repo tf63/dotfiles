@@ -1,0 +1,162 @@
+{
+    "editor.suggestSelection": "first",
+    "editor.minimap.enabled": false,
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4,
+    // ---------- Language ----------
+    "[tex]": {
+      // スニペット補完中にも補完を使えるようにする
+      "editor.suggest.snippetsPreventQuickSuggestions": false
+    },
+    "[latex]": {
+      // スニペット補完中にも補完を使えるようにする
+      "editor.suggest.snippetsPreventQuickSuggestions": false
+    },
+    // ---------- Python ----------
+    "[python]": {
+      "editor.defaultFormatter": "ms-python.black-formatter",
+      "editor.formatOnPaste": false,
+      "editor.formatOnSave": true,
+      "editor.formatOnType": false
+    },
+    "python.languageServer": "Pylance",
+    // Lint機能を有効にするかどうか
+    "python.linting.enabled": true,
+    // Linterにflake8を使用するかどうか
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": [
+      "--ignore=W293, W504, E111, E114, E402, E501"
+    ],
+    // Linterにpylintを使用するかどうか
+    "python.linting.pylintEnabled": false,
+    "python.linting.pycodestyleEnabled": false,
+    // ファイル保存時にLintを実行するかどうか
+    "python.linting.lintOnSave": true,
+    // Pythonコードの整形に何を使用するか
+    // "python.formatting.provider": "black",
+    // "python.formatting.provider": "autopep8",
+    // "python.formatting.autopep8Args": [
+    //     "--aggressive",
+    //     "--indent-size=4",
+    //     "--max-line-length",
+    //     "160",
+    //     "--ignore=E111, E114, E402, E501"
+    // ],
+    "python.analysis.typeCheckingMode": "basic",
+    //Pythonパス
+    "python.pythonPath": "C:\\Users\\erial\\anaconda3\\envs\\py38\\python.exe",
+    // ---------- Cpp ----------
+    // "C_Cpp.clang_format_style": "Google",
+    "[cpp]": {
+      "editor.tabSize": 4
+    },
+    // ---------- Cs ----------
+    "csharpfixformat.style.braces.onSameLine": false,
+    // ---------- Java ----------
+    "java.configuration.checkProjectSettingsExclusions": false,
+    // ---------- PHP ---------
+    "[php]": {
+      "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+    },
+    // ---------- TypeScript -----------
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    // ---------- 拡張機能 ----------
+    "git.autofetch": true,
+    "workbench.iconTheme": "vscode-icons",
+    //---------- LaTeX Workshop ----------
+    // 使用パッケージのコマンドや環境の補完を有効にする
+    "latex-workshop.intellisense.package.enabled": true,
+    // 生成ファイルを削除するときに対象とするファイル
+    // デフォルト値に "*.synctex.gz" を追加
+    "latex-workshop.latex.clean.fileTypes": [
+      "*.aux",
+      "*.bbl",
+      "*.blg",
+      "*.idx",
+      "*.ind",
+      "*.lof",
+      "*.lot",
+      "*.out",
+      "*.toc",
+      "*.acn",
+      "*.acr",
+      "*.alg",
+      "*.glg",
+      "*.glo",
+      "*.gls",
+      "*.ist",
+      "*.fls",
+      "*.log",
+      "*.fdb_latexmk",
+      "*.snm",
+      "*.nav",
+      "*.dvi",
+      "*.synctex.gz"
+    ],
+    // 生成ファイルを "out" ディレクトリに吐き出す
+    "latex-workshop.latex.outDir": "out",
+    // ビルドのレシピ
+    "latex-workshop.latex.recipes": [
+      {
+        "name": "latexmk",
+        "tools": [
+          "latexmk"
+        ]
+      }
+    ],
+    // ビルドのレシピに使われるパーツ
+    "latex-workshop.latex.tools": [
+      {
+        "name": "latexmk",
+        "command": "latexmk",
+        "args": [
+          "-silent",
+          "-outdir=%OUTDIR%",
+          "%DOC%"
+        ]
+      }
+    ],
+    "latex-workshop.view.pdf.viewer": "tab",
+    // ---------- System ----------
+    "files.autoGuessEncoding": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "explorer.confirmDragAndDrop": false,
+    "clang-format.executable": "/home/erial/.clang-format",
+    "workbench.editor.showTabs": "multiple",
+    "bracket-pair-colorizer-2.depreciation-notice": false,
+    "hediet.vscode-drawio.theme": "Kennedy",
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "python.defaultInterpreterPath": "/home/erial/.local/share/virtualenvs/math_sample-wG-qBDFl/bin/python",
+    "cmake.configureOnOpen": false,
+    "vsicons.dontShowNewVersionMessage": true,
+    "explorer.confirmDelete": false,
+    "jupyter.interactiveWindow.creationMode": "perFile",
+    "window.commandCenter": true,
+    "workbench.layoutControl.enabled": false,
+    "[css]": {
+      "editor.defaultFormatter": "aeschli.vscode-css-formatter"
+    },
+    "workbench.colorTheme": "Tokyo Night Storm",
+    "hediet.vscode-drawio.resizeImages": null,
+    "markdown-mermaid.darkModeTheme": "forest",
+    "markdown.marp.enableHtml": true,
+    "markdown.marp.mathTypesetting": "katex", // or mathjax (katexだと\bmが使える)
+    "markdown.marp.themes": [
+      "./theme/lab.css"
+    ],
+    "markdown.copyFiles.destination": {
+      // https://code.visualstudio.com/updates/v1_79#_copy-external-media-files-into-workspace-on-drop-or-paste-for-markdown
+      "*.md": "${documentDirName}/img/${documentBaseName}.png"
+    },
+    "[yaml]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "git.confirmSync": false,
+    "typescript.updateImportsOnFileMove.enabled": "never"
+  }

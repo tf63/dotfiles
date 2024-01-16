@@ -1,0 +1,213 @@
+// Place your key bindings in this file to override the defaults
+[
+    // カーソル上下左右の移動
+    // ----------------------------------------------------------------
+    {
+        "key": "ctrl+j",
+        "command": "cursorDown",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+j",
+        "command": "cursorDownSelect",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "cursorUp",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+k",
+        "command": "cursorUpSelect",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "cursorRight",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+l",
+        "command": "cursorRightSelect",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "cursorLeft",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+h",
+        "command": "cursorLeftSelect",
+        "when": "editorTextFocus"
+    },
+    // Ctrl+aで行頭へ移動、Ctrl+eで行末へ移動、Ctrl+dで削除
+    // ----------------------------------------------------------------
+    {
+        "key": "ctrl+a",
+        "command": "cursorHome",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+a",
+        "command": "cursorHomeSelect",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "cursorEnd",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+e",
+        "command": "cursorEndSelect",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "deleteLeft",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+d",
+        "command": "deleteRight",
+        "when": "editorTextFocus"
+    },
+    // notebook用のショートカット
+    {
+        "key": "shift+a",
+        "command": "notebook.cell.insertMarkdownCellAbove",
+        "when": "notebookCellListFocused && !inputFocus"
+    },
+    {
+        "key": "shift+b",
+        "command": "notebook.cell.insertMarkdownCellBelow",
+        "when": "notebookCellListFocused && !inputFocus"
+    },
+    // Ctrl+;にカスタムショートカットを設定する
+    // ----------------------------------------------------------------
+    // Ctrl+; Replace
+    {
+        "key": "ctrl+[Semicolon] ctrl+r",
+        "command": "editor.action.startFindReplaceAction",
+        "when": "editorFocus || editorIsOpen"
+    },
+    // Ctrl+; Delete line
+    {
+        "key": "ctrl+[Semicolon] ctrl+d",
+        "command": "editor.action.deleteLines",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    // Ctrl+; Toggle Line Comment
+    {
+        "key": "ctrl+[Semicolon] ctrl+c",
+        "command": "editor.action.commentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    // Ctrl+; Toggle Block Comment
+    {
+        "key": "ctrl+[Semicolon] ctrl+x",
+        "command": "editor.action.blockComment",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    // Ctrl+; Compare File
+    {
+        "key": "ctrl+[Semicolon] ctrl+f",
+        "command": "workbench.files.action.compareWithSaved"
+    },
+    // Ctrl+; InsertCursorAvove
+    {
+        "key": "ctrl+[Semicolon] ctrl+k",
+        "command": "editor.action.insertCursorAbove",
+        "when": "editorTextFocus"
+    },
+    // Ctrl+; InsertCursorBelow
+    {
+        "key": "ctrl+[Semicolon] ctrl+j",
+        "command": "editor.action.insertCursorBelow",
+        "when": "editorTextFocus"
+    },
+    // Ctrl+; ターミナルにフォーカス
+    {
+        "key": "ctrl+[Semicolon] ctrl+t",
+        "command": "workbench.action.terminal.focus"
+    },
+    // Ctrl+; 左のグループにフォーカス
+    {
+        "key": "ctrl+[Semicolon] ctrl+1",
+        "command": "workbench.action.focusLeftGroup"
+    },
+    // Ctrl+; 右のグループにフォーカス
+    {
+        "key": "ctrl+[Semicolon] ctrl+2",
+        "command": "workbench.action.focusRightGroup"
+    },
+    // 競合するショートカットを削除
+    // ----------------------------------------------------------------
+    // Ctrl+;を削除
+    {
+        "key": "ctrl+[Semicolon]",
+        "command": "-workbench.action.zoomIn"
+    },
+    {
+        "key": "ctrl+shift+[Semicolon]",
+        "command": "-workbench.action.zoomIn"
+    },
+    // 上下左右の削除
+    {
+        "key": "ctrl+h",
+        "command": "-editor.action.startFindReplaceAction",
+        "when": "editorFocus || editorIsOpen"
+    },
+    {
+        "key": "ctrl+shift+h",
+        "command": "-workbench.action.replaceInFiles"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "-workbench.action.togglePanel"
+    },
+    {
+        "key": "ctrl+shift+j",
+        "command": "-workbench.action.search.toggleQueryDetails",
+        "when": "inSearchEditor || searchViewletFocus"
+    },
+    {
+        "key": "ctrl+k d",
+        "command": "-workbench.files.action.compareWithSaved"
+    },
+    {
+        "key": "ctrl+k ctrl+d",
+        "command": "-editor.action.moveSelectionToNextFindMatch",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+j",
+        "command": "-editor.unfoldAll",
+        "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+        "key": "ctrl+k ctrl+left",
+        "command": "-workbench.action.focusLeftGroup"
+    },
+    {
+        "key": "ctrl+k ctrl+right",
+        "command": "-workbench.action.focusRightGroup"
+    },
+    {
+        "key": "ctrl+shift+k",
+        "command": "-editor.action.deleteLines",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    // Ctrl+dを削除
+    {
+        "key": "ctrl+d",
+        "command": "-editor.action.addSelectionToNextFindMatch",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+shift+d",
+        "command": "-workbench.view.debug"
+    },
+]
