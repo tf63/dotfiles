@@ -125,5 +125,18 @@
       "</html>"
     ],
     "description": "html template"
-  }
+  },
+	"prettierrc": {
+		"prefix": "prettierrc",
+		"body": [
+			"{",
+			"\t\"printWidth\": 120",
+			"\t\"tabWidth\": 4",
+			"\t\"singleQuote\": true",
+			"\t\"trailingComma\": \"none\"",
+			"\t\"semi\": false",
+			"\t\"parser\": \"typescript\"",
+			"}"
+		]
+	}
 }
