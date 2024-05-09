@@ -42,6 +42,16 @@
         "command": "cursorLeftSelect",
         "when": "editorTextFocus"
     },
+    {
+        "key": "ctrl+u",
+        "command": "cursorWordLeft",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+i",
+        "command": "cursorWordRight",
+        "when": "editorTextFocus"
+    },
     // Ctrl+aで行頭へ移動、Ctrl+eで行末へ移動、Ctrl+dで削除
     // ----------------------------------------------------------------
     {
@@ -210,4 +220,60 @@
         "key": "ctrl+shift+d",
         "command": "-workbench.view.debug"
     },
+    {
+        "key": "cmd+[IntlRo]",
+        "command": "-workbench.action.zoomOut"
+    },
+    {
+        "key": "ctrl+c",
+        "command": "editor.action.clipboardCopyAction"
+    },
+    {
+        "key": "cmd+c",
+        "command": "-editor.action.clipboardCopyAction"
+    },
+    {
+        "key": "ctrl+v",
+        "command": "editor.action.clipboardPasteAction"
+    },
+    {
+        "key": "ctrl+s",
+        "command": "workbench.action.files.save"
+    },
+    {
+        "key": "ctrl+alt+j",
+        "command": "-notebook.cell.joinBelow",
+        "when": "notebookEditorFocused"
+    },
+    {
+        "key": "ctrl+alt+j",
+        "command": "editor.action.moveLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+alt+k",
+        "command": "editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+z",
+        "command": "undo"
+    },
+    {
+        "key": "ctrl+x",
+        "command": "editor.action.clipboardCutAction"
+    },
+    {
+        "key": "ctrl+shift+z",
+        "command": "redo"
+    },
+    {
+        "key": "ctrl+shift+u",
+        "command": "cursorWordLeftSelect",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+shift+i",
+        "command": "cursorWordRightSelect"
+    }
 ]
