@@ -26,6 +26,8 @@ set -g cyan A8FFD1
 set -g brcyan D1FFE9
 set -g brown E9C1A8
 set -g brbrown FFE9D1
+set -g purple D6A8FF
+set -g brpurple E9D1FF
 
 set -g user_color $blue
 set -g atto_color $white
@@ -45,15 +47,14 @@ set fish_color_quote          $yellow
 set fish_color_autosuggestion $brblack
 
 set fish_color_comment        $bryellow
-set fish_color_cwd            $brred
 
-set fish_color_cancel         $brred
-set fish_color_end            $brred
-set fish_color_error          $brmagenta
+set fish_color_cancel         $red
+set fish_color_end            $red
+set fish_color_error          $purple
 
-set fish_color_escape         $brcyan
+set fish_color_escape         $brpurple
 set fish_color_match          $brcyan --underline
-set fish_color_operator       $magenta
+set fish_color_operator       $brpurple
 
 # pager
 set fish_pager_color_progress              $gray --italics
