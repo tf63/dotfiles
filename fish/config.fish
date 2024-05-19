@@ -108,3 +108,6 @@ alias icat="kitty +kitten icat"
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/tf63/Downloads/google-cloud-sdk/path.fish.inc' ]; . '/Users/tf63/Downloads/google-cloud-sdk/path.fish.inc'; end
+
+# linux
+# set -x TERM xterm
