@@ -106,8 +106,25 @@ end
 # kitty config ------------------------------------------------------
 alias icat="kitty +kitten icat"
 
+# docker ------------------------------------------------------------
+alias dc="docker compose"
+alias dce="docker compose exec"
+alias dcb="docker compose build"
+alias dcd="docker compose down"
+alias dcu="docker compose up"
+
+# pnpm
+alias pn="pnpm"
+alias pe="pnpm exec"
+alias pa="pnpm add"
+
+# nvm ----------------------------------------------------------------
+source ~/.config/fish/functions/__check_nvm.fish
+
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/tf63/Downloads/google-cloud-sdk/path.fish.inc' ]; . '/Users/tf63/Downloads/google-cloud-sdk/path.fish.inc'; end
+set -gx VOLTA_HOME "$HOME/.volta"
+set -gx PATH "$VOLTA_HOME/bin" $PATH
 
 # linux
 # set -x TERM xterm
