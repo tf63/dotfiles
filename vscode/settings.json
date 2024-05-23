@@ -30,7 +30,7 @@
   "explorer.confirmDelete": false,
 
   "background.windowBackgrounds": [],
-  "background.backgroundOpacity": [0.9, 0.92, 0.9, 0.9],
+  "background.backgroundOpacity": [0.85, 0.85, 0.9, 0.9],
   "background.editorBackgrounds": [
     "/Users/tf63/Downloads/メルヘンな街並み_10.png"
   ],
@@ -60,14 +60,14 @@
   ],
   // ================================================================
   "[python]": {
-    "editor.defaultFormatter": "ms-python.autopep8",
+    "editor.defaultFormatter": "ms-python.autopep8"
   },
   "autopep8.args": [
-      "--aggressive",
-      "--indent-size=4",
-      "--max-line-length",
-      "119",
-      "--ignore=E111, E114, E402, E501"
+    "--aggressive",
+    "--indent-size=4",
+    "--max-line-length",
+    "119",
+    "--ignore=E111, E114, E402, E501"
   ],
   "flake8.args": ["--ignore=W293, W504, E111, E114, E402, E501"],
   "python.languageServer": "Pylance",
@@ -78,7 +78,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -166,4 +166,38 @@
   ],
   "latex-workshop.view.pdf.viewer": "tab",
   "prettier.useEditorConfig": false,
+  "accessibility.signals.sounds.volume": 0,
+  "explorer.compactFolders": false,
+  "explorer.autoReveal": false,
+  "workbench.startupEditor": "none",
+
+  "accessibility.signals.chatRequestSent": {
+    "sound": "off"
+  },
+  "accessibility.signals.clear": { "sound": "off" },
+  "accessibility.signals.lineHasFoldedArea": { "sound": "off" },
+  "accessibility.signals.lineHasInlineSuggestion": { "sound": "off" },
+  "accessibility.signals.noInlayHints": { "sound": "off" },
+  "accessibility.signals.notebookCellCompleted": { "sound": "off" },
+  "accessibility.signals.onDebugBreak": { "sound": "off" },
+  "accessibility.signals.notebookCellFailed": { "sound": "off" },
+  "accessibility.signals.taskCompleted": { "sound": "off" },
+  "accessibility.signals.terminalQuickFix": { "sound": "off" },
+  "accessibility.signals.terminalCommandFailed": { "sound": "off" },
+  "accessibility.signals.terminalBell": { "sound": "off" },
+  "accessibility.signals.taskFailed": { "sound": "off" },
+  "accessibility.signals.lineHasWarning": { "sound": "off" },
+  "accessibility.signals.lineHasError": { "sound": "off" },
+  "accessibility.signals.lineHasBreakpoint": { "sound": "off" },
+  "accessibility.signals.diffLineModified": { "sound": "off" },
+  "accessibility.signals.diffLineInserted": { "sound": "off" },
+  "accessibility.signals.diffLineDeleted": {
+    "sound": "off"
+  },
+  "accessibility.signals.progress": {
+    "sound": "off"
+  },
+  "window.titleBarStyle": "native",
+  "window.nativeTabs": true,
+  "window.customTitleBarVisibility": "never"
 }

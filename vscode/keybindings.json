@@ -1,314 +1,427 @@
-// Place your key bindings in this file to override the defaults
 [
     // カーソル上下左右の移動
     // ----------------------------------------------------------------
     {
-        "key": "ctrl+j",
-        "command": "cursorDown",
-        "when": "editorTextFocus"
+      "key": "ctrl+j",
+      "command": "cursorDown",
+      "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+shift+j",
-        "command": "cursorDownSelect",
-        "when": "editorTextFocus"
+      "key": "ctrl+shift+j",
+      "command": "cursorDownSelect",
+      "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+k",
-        "command": "cursorUp",
-        "when": "editorTextFocus"
+      "key": "ctrl+k",
+      "command": "cursorUp",
+      "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+shift+k",
-        "command": "cursorUpSelect",
-        "when": "editorTextFocus"
+      "key": "ctrl+shift+k",
+      "command": "cursorUpSelect",
+      "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+l",
-        "command": "cursorRight",
-        "when": "editorTextFocus"
+      "key": "ctrl+l",
+      "command": "cursorRight",
+      "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+shift+l",
-        "command": "cursorRightSelect",
-        "when": "editorTextFocus"
+      "key": "ctrl+shift+l",
+      "command": "cursorRightSelect",
+      "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+h",
-        "command": "cursorLeft",
-        "when": "editorTextFocus"
+      "key": "ctrl+h",
+      "command": "cursorLeft",
+      "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+shift+h",
-        "command": "cursorLeftSelect",
-        "when": "editorTextFocus"
+      "key": "ctrl+shift+h",
+      "command": "cursorLeftSelect",
+      "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+u",
-        "command": "cursorWordLeft",
-        "when": "editorTextFocus"
+      "key": "ctrl+u",
+      "command": "cursorWordStartLeft",
+      "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+i",
-        "command": "cursorWordRight",
-        "when": "editorTextFocus"
+      "key": "ctrl+i",
+      "command": "cursorWordStartRight",
+      "when": "editorTextFocus"
     },
     // Ctrl+aで行頭へ移動、Ctrl+eで行末へ移動、Ctrl+dで削除
     // ----------------------------------------------------------------
     {
-        "key": "ctrl+a",
-        "command": "cursorHome",
-        "when": "editorTextFocus"
+      "key": "ctrl+a",
+      "command": "cursorHome",
+      "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+shift+a",
-        "command": "cursorHomeSelect",
-        "when": "editorTextFocus"
+      "key": "ctrl+shift+a",
+      "command": "cursorHomeSelect",
+      "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+e",
-        "command": "cursorEnd",
-        "when": "editorTextFocus"
+      "key": "ctrl+e",
+      "command": "cursorEnd",
+      "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+shift+e",
-        "command": "cursorEndSelect",
-        "when": "editorTextFocus"
+      "key": "ctrl+shift+e",
+      "command": "cursorEndSelect",
+      "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+d",
-        "command": "deleteLeft",
-        "when": "editorTextFocus"
+      "key": "ctrl+d",
+      "command": "deleteLeft",
+      "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+shift+d",
-        "command": "deleteRight",
-        "when": "editorTextFocus"
+      "key": "ctrl+shift+d",
+      "command": "deleteRight",
+      "when": "editorTextFocus"
     },
     // notebook用のショートカット
     {
-        "key": "shift+a",
-        "command": "notebook.cell.insertMarkdownCellAbove",
-        "when": "notebookCellListFocused && !inputFocus"
+      "key": "shift+a",
+      "command": "notebook.cell.insertMarkdownCellAbove",
+      "when": "notebookCellListFocused && !inputFocus"
     },
     {
-        "key": "shift+b",
-        "command": "notebook.cell.insertMarkdownCellBelow",
-        "when": "notebookCellListFocused && !inputFocus"
+      "key": "shift+b",
+      "command": "notebook.cell.insertMarkdownCellBelow",
+      "when": "notebookCellListFocused && !inputFocus"
     },
     // Ctrl+;にカスタムショートカットを設定する
     // ----------------------------------------------------------------
     // Ctrl+; Replace
     {
-        "key": "ctrl+[Semicolon] ctrl+r",
-        "command": "editor.action.startFindReplaceAction",
-        "when": "editorFocus || editorIsOpen"
+      "key": "ctrl+[Semicolon] ctrl+r",
+      "command": "editor.action.startFindReplaceAction",
+      "when": "editorFocus || editorIsOpen"
     },
     // Ctrl+; Delete line
     {
-        "key": "ctrl+[Semicolon] ctrl+d",
-        "command": "editor.action.deleteLines",
-        "when": "editorTextFocus && !editorReadonly"
+      "key": "ctrl+[Semicolon] ctrl+d",
+      "command": "editor.action.deleteLines",
+      "when": "editorTextFocus && !editorReadonly"
     },
     // Ctrl+; Toggle Line Comment
     {
-        "key": "ctrl+[Semicolon] ctrl+c",
-        "command": "editor.action.commentLine",
-        "when": "editorTextFocus && !editorReadonly"
+      "key": "ctrl+[Semicolon] ctrl+c",
+      "command": "editor.action.commentLine",
+      "when": "editorTextFocus && !editorReadonly"
     },
     // Ctrl+; Toggle Block Comment
     {
-        "key": "ctrl+[Semicolon] ctrl+x",
-        "command": "editor.action.blockComment",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    // Ctrl+; Compare File
-    {
-        "key": "ctrl+[Semicolon] ctrl+f",
-        "command": "workbench.files.action.compareWithSaved"
+      "key": "ctrl+[Semicolon] ctrl+x",
+      "command": "editor.action.blockComment",
+      "when": "editorTextFocus && !editorReadonly"
     },
     // Ctrl+; InsertCursorAvove
     {
-        "key": "ctrl+[Semicolon] ctrl+k",
-        "command": "editor.action.insertCursorAbove",
-        "when": "editorTextFocus"
+      "key": "ctrl+[Semicolon] ctrl+k",
+      "command": "editor.action.insertCursorAbove",
+      "when": "editorTextFocus"
     },
     // Ctrl+; InsertCursorBelow
     {
-        "key": "ctrl+[Semicolon] ctrl+j",
-        "command": "editor.action.insertCursorBelow",
-        "when": "editorTextFocus"
-    },
-    // Ctrl+; ターミナルにフォーカス
-    {
-        "key": "ctrl+[Semicolon] ctrl+t",
-        "command": "workbench.action.terminal.focus"
-    },
-    // Ctrl+; 左のグループにフォーカス
-    {
-        "key": "ctrl+[Semicolon] ctrl+1",
-        "command": "workbench.action.focusLeftGroup"
-    },
-    // Ctrl+; 右のグループにフォーカス
-    {
-        "key": "ctrl+[Semicolon] ctrl+2",
-        "command": "workbench.action.focusRightGroup"
+      "key": "ctrl+[Semicolon] ctrl+j",
+      "command": "editor.action.insertCursorBelow",
+      "when": "editorTextFocus"
     },
     // 競合するショートカットを削除
     // ----------------------------------------------------------------
     // Ctrl+;を削除
     {
-        "key": "ctrl+[Semicolon]",
-        "command": "-workbench.action.zoomIn"
+      "key": "ctrl+[Semicolon]",
+      "command": "-workbench.action.zoomIn"
     },
     {
-        "key": "ctrl+shift+[Semicolon]",
-        "command": "-workbench.action.zoomIn"
+      "key": "ctrl+shift+[Semicolon]",
+      "command": "-workbench.action.zoomIn"
     },
     // 上下左右の削除
     {
-        "key": "ctrl+h",
-        "command": "-editor.action.startFindReplaceAction",
-        "when": "editorFocus || editorIsOpen"
+      "key": "ctrl+h",
+      "command": "-editor.action.startFindReplaceAction",
+      "when": "editorFocus || editorIsOpen"
     },
     {
-        "key": "ctrl+shift+h",
-        "command": "-workbench.action.replaceInFiles"
+      "key": "ctrl+shift+h",
+      "command": "-workbench.action.replaceInFiles"
     },
     {
-        "key": "ctrl+j",
-        "command": "-workbench.action.togglePanel"
+      "key": "ctrl+j",
+      "command": "-workbench.action.togglePanel"
     },
     {
-        "key": "ctrl+shift+j",
-        "command": "-workbench.action.search.toggleQueryDetails",
-        "when": "inSearchEditor || searchViewletFocus"
+      "key": "ctrl+shift+j",
+      "command": "-workbench.action.search.toggleQueryDetails",
+      "when": "inSearchEditor || searchViewletFocus"
     },
     {
-        "key": "ctrl+k d",
-        "command": "-workbench.files.action.compareWithSaved"
+      "key": "ctrl+k d",
+      "command": "-workbench.files.action.compareWithSaved"
     },
     {
-        "key": "ctrl+k ctrl+d",
-        "command": "-editor.action.moveSelectionToNextFindMatch",
-        "when": "editorFocus"
+      "key": "ctrl+k ctrl+d",
+      "command": "-editor.action.moveSelectionToNextFindMatch",
+      "when": "editorFocus"
     },
     {
-        "key": "ctrl+k ctrl+j",
-        "command": "-editor.unfoldAll",
-        "when": "editorTextFocus && foldingEnabled"
+      "key": "ctrl+k ctrl+j",
+      "command": "-editor.unfoldAll",
+      "when": "editorTextFocus && foldingEnabled"
     },
     {
-        "key": "ctrl+k ctrl+left",
-        "command": "-workbench.action.focusLeftGroup"
+      "key": "ctrl+k ctrl+left",
+      "command": "-workbench.action.focusLeftGroup"
     },
     {
-        "key": "ctrl+k ctrl+right",
-        "command": "-workbench.action.focusRightGroup"
+      "key": "ctrl+k ctrl+right",
+      "command": "-workbench.action.focusRightGroup"
     },
     {
-        "key": "ctrl+shift+k",
-        "command": "-editor.action.deleteLines",
-        "when": "textInputFocus && !editorReadonly"
+      "key": "ctrl+shift+k",
+      "command": "-editor.action.deleteLines",
+      "when": "textInputFocus && !editorReadonly"
     },
     // Ctrl+dを削除
     {
-        "key": "ctrl+d",
-        "command": "-editor.action.addSelectionToNextFindMatch",
-        "when": "editorFocus"
+      "key": "ctrl+d",
+      "command": "-editor.action.addSelectionToNextFindMatch",
+      "when": "editorFocus"
     },
     {
-        "key": "ctrl+shift+d",
-        "command": "-workbench.view.debug"
+      "key": "ctrl+shift+d",
+      "command": "-workbench.view.debug"
     },
     {
-        "key": "cmd+[IntlRo]",
-        "command": "-workbench.action.zoomOut"
+      "key": "cmd+[IntlRo]",
+      "command": "-workbench.action.zoomOut"
     },
     {
-        "key": "ctrl+c",
-        "command": "editor.action.clipboardCopyAction"
+      "key": "ctrl+c",
+      "command": "editor.action.clipboardCopyAction"
     },
     {
-        "key": "cmd+c",
-        "command": "-editor.action.clipboardCopyAction"
+      "key": "cmd+c",
+      "command": "-editor.action.clipboardCopyAction"
     },
     {
-        "key": "ctrl+v",
-        "command": "editor.action.clipboardPasteAction"
+      "key": "ctrl+v",
+      "command": "editor.action.clipboardPasteAction"
     },
     {
-        "key": "ctrl+s",
-        "command": "workbench.action.files.save"
+      "key": "ctrl+s",
+      "command": "workbench.action.files.save"
     },
     {
-        "key": "ctrl+alt+j",
-        "command": "-notebook.cell.joinBelow",
-        "when": "notebookEditorFocused"
+      "key": "ctrl+alt+j",
+      "command": "-notebook.cell.joinBelow",
+      "when": "notebookEditorFocused"
     },
     {
-        "key": "ctrl+alt+j",
-        "command": "editor.action.moveLinesDownAction",
-        "when": "editorTextFocus && !editorReadonly"
+      "key": "ctrl+alt+j",
+      "command": "editor.action.moveLinesDownAction",
+      "when": "editorTextFocus && !editorReadonly"
     },
     {
-        "key": "ctrl+alt+k",
-        "command": "editor.action.moveLinesUpAction",
-        "when": "editorTextFocus && !editorReadonly"
+      "key": "ctrl+alt+k",
+      "command": "editor.action.moveLinesUpAction",
+      "when": "editorTextFocus && !editorReadonly"
     },
     {
-        "key": "ctrl+z",
-        "command": "undo"
+      "key": "ctrl+z",
+      "command": "undo"
     },
     {
-        "key": "ctrl+x",
-        "command": "editor.action.clipboardCutAction"
+      "key": "ctrl+x",
+      "command": "editor.action.clipboardCutAction"
     },
     {
-        "key": "ctrl+shift+z",
-        "command": "redo"
+      "key": "ctrl+shift+z",
+      "command": "redo"
     },
     {
-        "key": "ctrl+shift+u",
-        "command": "cursorWordLeftSelect",
-        "when": "textInputFocus"
+      "key": "ctrl+shift+u",
+      "command": "cursorWordStartLeftSelect",
+      "when": "textInputFocus"
     },
     {
-        "key": "ctrl+shift+i",
-        "command": "cursorWordRightSelect"
+      "key": "ctrl+shift+i",
+      "command": "cursorWordStartRightSelect"
     },
     {
-        "key": "ctrl+]",
-        "command": "editor.action.indentLines",
-        "when": "editorTextFocus && !editorReadonly"
+      "key": "ctrl+/",
+      "command": "-github.copilot.acceptCursorPanelSolution",
+      "when": "github.copilot.activated && github.copilot.panelVisible && activeWebviewPanelId == 'GitHub Copilot Suggestions'"
     },
     {
-        "key": "ctrl+[",
-        "command": "editor.action.outdentLines",
-        "when": "editorTextFocus && !editorReadonly"
+      "key": "ctrl+/",
+      "command": "-editor.action.accessibleViewAcceptInlineCompletion",
+      "when": "accessibleViewIsShown && accessibleViewCurrentProviderId == 'inlineCompletions'"
     },
     {
-        "key": "ctrl+/",
-        "command": "-github.copilot.acceptCursorPanelSolution",
-        "when": "github.copilot.activated && github.copilot.panelVisible && activeWebviewPanelId == 'GitHub Copilot Suggestions'"
+      "key": "ctrl+/",
+      "command": "editor.action.commentLine",
+      "when": "editorTextFocus && !editorReadonly"
     },
     {
-        "key": "ctrl+/",
-        "command": "-editor.action.accessibleViewAcceptInlineCompletion",
-        "when": "accessibleViewIsShown && accessibleViewCurrentProviderId == 'inlineCompletions'"
+      "key": "ctrl+f",
+      "command": "-cursorRight",
+      "when": "textInputFocus"
     },
     {
-        "key": "ctrl+/",
-        "command": "editor.action.commentLine",
-        "when": "editorTextFocus && !editorReadonly"
+      "key": "ctrl+f",
+      "command": "cursorRight",
+      "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+f",
-        "command": "-cursorRight",
-        "when": "textInputFocus"
+      "key": "cmd+/",
+      "command": "-toggleExplainMode",
+      "when": "suggestWidgetVisible"
     },
     {
-        "key": "ctrl+f",
-        "command": "cursorRight",
-        "when": "editorTextFocus"
+      "key": "ctrl+]",
+      "command": "workbench.action.nextEditor"
     },
+    {
+      "key": "ctrl+[",
+      "command": "workbench.action.previousEditor"
+    },
+    {
+      "key": "alt+]",
+      "command": "workbench.action.moveEditorToNextGroup"
+    },
+    {
+      "key": "ctrl+m",
+      "command": "editor.action.triggerSuggest",
+      "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
+    },
+    {
+      "key": "ctrl+shift+o",
+      "command": "workbench.action.switchWindow"
+    },
+    {
+      "key": "ctrl+w",
+      "command": "-workbench.action.switchWindow"
+    },
+    {
+      "key": "ctrl+w",
+      "command": "workbench.action.closeActiveEditor"
+    },
+    {
+      "key": "ctrl+shift+w",
+      "command": "workbench.action.closeUnmodifiedEditors"
+    },
+    {
+      "key": "shift+cmd+t",
+      "command": "-workbench.action.reopenClosedEditor"
+    },
+    {
+      "key": "cmd+w",
+      "command": "-workbench.action.closeActiveEditor"
+    },
+    {
+      "key": "alt+j",
+      "command": "scrollPageDown",
+      "when": "textInputFocus"
+    },
+    {
+      "key": "alt+k",
+      "command": "scrollPageUp",
+      "when": "textInputFocus"
+    },
+    {
+      "key": "ctrl+[BracketLeft]",
+      "command": "workbench.action.terminal.toggleTerminal",
+      "when": "terminal.active"
+    },
+    {
+      "key": "ctrl+o",
+      "command": "-lineBreakInsert",
+      "when": "textInputFocus && !editorReadonly"
+    },
+    {
+      "key": "ctrl+o",
+      "command": "workbench.action.quickOpen"
+    },
+    {
+      "key": "ctrl+[Semicolon] ctrl+f",
+      "command": "actions.find",
+      "when": "editorFocus || editorIsOpen"
+    },
+    {
+      "key": "alt+]",
+      "command": "-github.copilot.nextPanelSolution",
+      "when": "github.copilot.activated && github.copilot.panelVisible && activeWebviewPanelId == 'GitHub Copilot Suggestions'"
+    },
+    {
+      "key": "alt+]",
+      "command": "-editor.action.accessibleViewNext",
+      "when": "accessibleViewIsShown && accessibleViewSupportsNavigation"
+    },
+    {
+      "key": "alt+]",
+      "command": "-editor.action.inlineSuggest.showNext",
+      "when": "inlineSuggestionVisible && !editorReadonly"
+    },
+    {
+      "key": "alt+[",
+      "command": "-github.copilot.previousPanelSolution",
+      "when": "github.copilot.activated && github.copilot.panelVisible && activeWebviewPanelId == 'GitHub Copilot Suggestions'"
+    },
+    {
+      "key": "alt+[",
+      "command": "-editor.action.accessibleViewPrevious",
+      "when": "accessibleViewIsShown && accessibleViewSupportsNavigation"
+    },
+    {
+      "key": "alt+[",
+      "command": "-editor.action.inlineSuggest.showPrevious",
+      "when": "inlineSuggestionVisible && !editorReadonly"
+    },
+    {
+      "key": "alt+[",
+      "command": "workbench.action.moveEditorToPreviousGroup"
+    },
+    {
+      "key": "ctrl+y",
+      "command": "redo"
+    },
+    {
+      "key": "ctrl+[Semicolon] ctrl+e",
+      "command": "workbench.view.explorer",
+      "when": "viewContainer.workbench.view.explorer.enabled"
+    },
+    {
+      "key": "ctrl+[Semicolon] ctrl+s",
+      "command": "workbench.action.files.saveWithoutFormatting"
+    },
+    {
+      "key": "ctrl+.",
+      "command": "editor.action.indentLines",
+      "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+      "key": "ctrl+,",
+      "command": "editor.action.outdentLines",
+      "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+      "key": "ctrl+[Semicolon] ctrl+b",
+      "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+      "key": "ctrl+shift+[",
+      "command": "workbench.action.showPreviousWindowTab"
+    },
+    {
+      "key": "ctrl+shift+]",
+      "command": "workbench.action.showNextWindowTab"
+    }
 ]
