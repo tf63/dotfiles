@@ -1,0 +1,25 @@
+{
+    "description": "left control + g to enter",
+    "manipulators": [
+        {
+            "from": {
+                "key_code": "g",
+                "modifiers": {
+                    "mandatory": [
+                        "left_control"
+                    ],
+                    "optional": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "return_or_enter",
+                    "modifiers": []
+                }
+            ],
+            "type": "basic"
+        }
+    ]
+}
