@@ -1,0 +1,384 @@
+{
+    // 
+	// Place your snippets for latex here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }{
+    
+    "frac": {
+        "prefix": "frac",
+        "body": [
+            "\\frac{${1}}{${2}} ${0}",
+        ]
+    },
+    "sum": {
+        "prefix": "sum",
+        "body": [
+            "\\sum_{${1}}^{${2}} ${0}",
+        ]
+    },
+    "int": {
+        "prefix": "int",
+        "body": [
+            "\\int_{${1}}^{${2}} ${0}",
+        ]
+    },
+    "rint": {
+        "prefix": "rint",
+        "body": [
+            "\\biggl[${0}\\biggr]_{${1}}^{${2}}",
+        ]
+    },
+    "replace": {
+        "prefix": "replace",
+        "body": [
+            "% 置換対象",
+            "% 「、」-> 「，」",
+            "% 「,」->「，」",
+            "% 「。」->「．」",
+            "% 「（）」->「()」",
+            "% 「もとめ」->「求め」",
+            "% 「もつ」->「持つ」",
+        ]
+    },
+    "report": {
+        "prefix": "report",
+        "body": [
+            "\\documentclass[a4j]{ujarticle}",
+            "% \\documentclass[a4j, titlepage]{jarticle}",
+            "",
+            "% 基本",
+            "\\usepackage{latexsym}",
+            "\\usepackage{fancyvrb}",
+            "\\usepackage{url}",
+            "\\usepackage{comment}",
+            "% 数式",
+            "\\usepackage{amsmath}",
+            "\\usepackage{bm}",
+            "% 画像",
+            "\\usepackage[dvipdfmx]{graphicx}",
+            "",
+            "% subfig",
+            "\\newlength{\\subfigwidth}",
+            "\\newlength{\\subfigcolsep}",
+            "\\setlength{\\subfigcolsep}{2\\tabcolsep}",
+            "\\setkeys{Gin}{width=\\subfigwidth}",
+            "\\usepackage{subfigure}",
+            "",
+            "\\title{${1}}",
+            "\\author{${2}}",
+            "",
+            "\\begin{document}",
+            "\\maketitle",
+            "",
+            "",
+            "$0",
+            "",
+            "",
+            "\\end{document}"
+        ],
+        "description": "レポート用テンプレート"
+    },
+    "report_title": {
+        "prefix" : "report_title",
+        "body": [
+            "\\makeatletter",
+            "\\def\\maketitle{",
+                "\\begin{center}",
+                    "\\vspace*{\\fill}",
+                    "{\\LARGE \\@title}",
+                    "\\vspace{100truept}",
+                    "{\\Large 実験項目：\\underline{\\hbox to20zw{\\hfill \\@extitle \\hfill}}} ",
+                    "\\vspace{100truept}",
+                    "{\\Large ",
+                        "\\begin{tabular}{rl}",
+                            "実験日： & \\underline{\\hbox to11zw{\\hfill \\@exdate} \\hfill}\\\\\\ ",
+                            "\\\\\\",
+                            "レポート提出日： & \\underline{\\hbox to11zw{\\hfill \\@submitdate \\hfill}}\\\\\\",
+                            "\\\\\\",
+                        "\\end{tabular}",
+                    "}",
+                    "\\vspace{30truept}",
+                    "{\\Large ",
+                        "\\begin{tabular}{rl}",
+                            "提出者　学生証番号： & \\underline{\\hbox to8zw{\\hfill \\@mynumber \\hfill}}\\\\\\",
+                            "\\\\\\",
+                            "氏名： & \\underline{\\hbox to8zw{\\hfill \\@author \\hfill}}\\\\\\",
+                            "\\\\\\",
+                        "\\end{tabular}",
+                    "}",
+                    "\\vspace*{\\fill}",
+                "\\end{center}",
+                "\\clearpage",
+            "}",
+            "\\def\\title#1{\\def\\@title{#1}}",
+            "\\def\\extitle#1{\\def\\@extitle{#1}}",
+            "\\def\\exdate#1{\\def\\@exdate{#1}}",
+            "\\def\\submitdate#1{\\def\\@submitdate{#1}}",
+            "\\def\\mynumber#1{\\def\\@mynumber{#1}}",
+            "\\def\\author#1{\\def\\@author{#1}}",
+            "\\title{}",
+            "\\author{}",
+            "\\makeatother",
+            "",
+            "\\title{${1}}",
+            "\\extitle{${2}}",
+            "\\exdate{${3}}",
+            "\\submitdate{${4}}",
+            "\\mynumber{${5}}",
+            "\\author{${6}}",
+        ],
+        "description": "document内でmaketitleすると表紙ページができる"
+    },
+    "math_code": {
+        "prefix": "mathcodes",
+        "body": [
+            "% \\quad -> 「スペース」",
+            "% \\qquad -> 「\\quad の二倍」", 
+
+            "% ギリシャ文字",
+            "% \\phi -> 「ファイ」",
+            "% \\varphi -> 「ファイ（別の）」",
+            "% \\rho -> 「ロウ」",
+
+            "% 単項演算子",
+            "% \\neg -> 「￢」",
+            "% \\forall -> 「∀」",
+            "% \\exists -> 「∃」",
+            "% \\bot -> 「⊥」",
+
+            "% 二項演算子",
+            "% \\pm -> 「プラスマイナス」",
+            "% \\mp -> 「マイナスプラス」",
+            "% \\times -> 「×」",
+            "% \\ast -> 「＊」",
+            "% \\div -> 「÷」",
+            "% \\cdot -> 「・」",
+            "% \\circ -> 「丸（小）」",
+            "% \\cup -> 「∪」",
+            "% \\cap -> 「∩」",
+            "% \\wedge -> 「∧」",
+            "% \\vee -> 「∨」",
+
+            "% 関係演算子",
+            "% \\equiv -> 「合同」",
+            "% \\neq -> 「not=」",
+            "% \\leq -> 「<=」",
+            "% \\geq -> 「>=」",
+            "% \\ll -> 「<<」",
+            "% \\gg -> 「>>」",
+            "% \\subset -> 「⊂」",
+            "% \\subseteq -> 「⊆」",
+            "% \\supset -> 「⊃」",
+            "% \\supseteq -> 「⊇」",
+            "% \\in -> 「∈」",
+            "% \\ni -> 「∋」",
+
+            "% 矢印",
+            "% \\rightarrow -> 「→」 ",
+            "% \\leftarrow -> 「←」",
+            "% \\longmapsto -> 「写像」",
+            "% \\Leftrightarrow -> 「⇔」",
+
+            "% 括弧",
+            "% ( -> 「(」",
+            "% \\bigl( -> 「一段階大きい(」",
+            "% \\Bigl( -> 「二段階大きい(」",
+            "% \\biggl( -> 「三段階大きい(」",
+            "% \\Biggl( -> 「四段階大きい(」",
+
+            "% 微積分関連",
+            "% \\partial -> 「∂」",
+            "% \\infty -> 「∞」",
+            "% \\sim -> 「~」"
+        ],
+        "description": "よく使うlatexの数式"
+    },
+
+    "list-item": {
+        "prefix": "list_item",
+        "body":[
+            "\\begin{itemize}",
+            "\t\\item ${1}",
+            "\\end{itemize}",
+        ],
+        "description": "箇条書き",
+    },
+
+    "list-number": {
+        "prefix": "list_number",
+        "body":[
+            "\\begin{enumerate}",
+            "\t\\item ${1}",
+            "\\end{enumerate}",
+        ],
+        "description": "番号付き箇条書き"
+    },
+
+    "list-text": {
+        "prefix": "list_text",
+        "body": [
+            "\\begin{description}",
+            "\t\\item[${1}] ${2}",
+            "\\end{description}",
+        ],
+        "description": "説明付き箇条書き"
+    },
+
+    "bib": {
+        "prefix": "bib",
+        "body": [
+            "\\begin{thebibliography}",
+            "\t\\bibitem {${1}} ${2}",
+            "\\end{thebibliography}",
+        ],
+        "description": "参考文献 \\cite{key}で参照",
+    },
+
+    "split_equation": {
+        "prefix": "split_equation",
+        "body": [
+            "\\begin{equation}",
+                "\t\\begin{split}",
+                    "\t\t0",
+                    "\t\t&=",
+                    "\t\t\t0",
+                    "\t\t\\\\\\",
+                    "\t\t&=",
+                    "\t\t\t0",
+                    "\t\t\\\\\\",
+                "\t\\end{split}",
+            "\\end{equation}",
+        ],
+        "description": "equation環境で改行する"
+    },
+    "cases_equation": {
+        "prefix": "case_equation",
+        "body": [
+            "\\begin{equation}",
+                "\t\\begin{cases}",
+                    "\t\t${1} & \\text{if ${2}}\\\\\\",
+                    "\t\t${3} & \\text{if ${4}}\\\\\\",
+                "\t\\end{cases}",
+            "\\end{equation}"
+        ],
+        "description": "equation環境で場合分けする"
+    },
+    "array_equation": {
+        "prefix": "array_equation",
+        "body": [
+            "\\begin{equation}",
+                "\t\\begin{array}{c}",
+                    "\t\t${0}\\\\\\",
+                "\t\\end{array}",
+            "\\end{equation}",
+        ]
+    },
+
+
+    "table": {
+        "prefix": "table",
+        "body": [
+            "\\begin{table}[htb]",
+                "\t\\caption{図．}",
+                "\t\\begin{center} ",
+                    "\t\t\\label{fig:table}",
+                    "\t\t\\begin{tabular}{|c||c|c|} \\hline",
+                        "\t\t\t${1} & ${2} & ${3} \\\\\\ \\hline \\hline",
+                        "\t\t\t0 & 0 & 0 \\\\\\ \\hline",
+                        "\t\t\t0 & 0 & 0 \\\\\\ \\hline",
+                        "\t\t\t0 & 0 & 0 \\\\\\ \\hline",
+                    "\t\t\\end{tabular}",
+                "\t\\end{center}",
+            "\\end{table}",
+        ],
+        "description": [
+            "表を出力\n",
+            "\\begin{table}[htb] ",
+            "-> 「h->記述した場所に表を出力」",
+            "-> 「t->ページの上部に表を出力」",
+            "-> 「b->ページの下部に表を出力」\n",
+            "\\begin{tabular}{|c||c|c|}",
+            "-> 「l->その列を左寄せにする」",
+            "-> 「c->その列をセンタリングする」",
+            "-> 「r->その列を右寄せにする」\n",
+        ]
+    },
+
+    "tabletable": {
+        "prefix": "tabletable",
+        "body": [
+            "\\begin{table}[h]",
+                "\t\\begin{minipage}[t]{.45\\textwidth}",
+                    "\t\t\\caption{左側の表．}",
+                    "\t\t\\begin{center} ",
+                        "\t\t\t\\label{fig:table1}",
+                        "\t\t\t\\begin{tabular}{|c||c|c|} \\hline",
+                            "\t\t\t\t${1} & ${2} & ${3} \\\\\\ \\hline \\hline",
+                            "\t\t\t\t0 & 0 & 0 \\\\\\ \\hline",
+                            "\t\t\t\t0 & 0 & 0 \\\\\\ \\hline",
+                            "\t\t\t\t0 & 0 & 0 \\\\\\ \\hline",
+                        "\t\t\t\\end{tabular}",
+                    "\t\t\\end{center}",
+                "\t\\end{minipage}",
+                "\t\\hfill",
+                "\t\\begin{minipage}[t]{.45\\textwidth}",
+                    "\t\t\\caption{右側の表．}A",
+                    "\t\t\\begin{center}  ",
+                        "\t\t\t\\label{fig:table2}",
+                        "\t\t\t\\begin{tabular}{|c||c|c|} \\hline",
+                            "\t\t\t\t${4} & ${5} & ${6} \\\\\\ \\hline \\hline",
+                            "\t\t\t\t0 & 0 & 0 \\\\\\ \\hline",
+                            "\t\t\t\t0 & 0 & 0 \\\\\\ \\hline",
+                            "\t\t\t\t0 & 0 & 0 \\\\\\ \\hline",
+                        "\t\t\t\\end{tabular}",
+                    "\t\t\\end{center}",
+                "\t\\end{minipage}",
+            "\\end{table}",
+        ]
+    },
+
+    "figure": {
+        "prefix": "figure",
+        "body": [
+            "\\begin{figure}[htb]",
+            "\t\\begin{center}",
+            "\t\t\\includegraphics[width=5.0cm]{${1}}",
+            "\t\t\\caption{図}",
+            "\t\t\\label{fig:figure}",
+            "\t\\end{center}",
+            "\\end{figure}",
+        ],
+    },
+
+    "figurefigure": {
+        "prefix": "figurefigure",
+        "body": [
+            "\\begin{figure}[htb]",
+            "\t\\begin{center}",
+            "\t\\subfigure[左側の図．]{",
+            "\t\t\\includegraphics[width=5.0cm]{${1}}",
+            "\t\t\\label{fig:figure1}",
+            "\t}",
+            "\t\\hfill",
+            "\t\\subfigure[右側の図．]{",
+            "\t\t\\includegraphics[width=5.0cm]{${2}}",
+            "\t\t\\label{fig:figure2}",
+            "\t}",
+            "\t\\end{center}",
+            "\t\\vspace{-0.5cm}",
+            "\t\\caption{2つの図．}",
+            "\t\\label{fig:figure}",
+            "\\end{figure}",
+        ],
+    },
+}

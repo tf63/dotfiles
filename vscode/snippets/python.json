@@ -1,0 +1,128 @@
+{
+	// Place your snippets for python here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"cell": {
+		"prefix": "cell",
+		"body": "# %%"
+	},
+	"markdown": {
+		"prefix": "markdown",
+		"body": "# %% [markdown]"
+	},
+	"fdoc_google": {
+		"prefix": "fdoc_google",
+		"body": [
+			"\"\"\"関数の説明のタイトル",
+			"",
+			"関数についての説明文",
+			"",
+			"Args:",
+			"\t",
+			"",
+			"Returns:",
+			"\t",
+			"",
+			"Raises:",
+			"\t",
+			"",
+			"Examples:",
+			"\t",
+			"\t>>>",
+			"Note:",
+			"\t",
+			"\"\"\"",
+		],
+		"description": [
+			"Args:",
+			"\t引数の名前(引数の型): 引数の説明",
+			"",
+			"Returns:",
+			"\t戻り値の型: 戻り値の説明（例: Trueなら成功，Falseなら失敗．)",
+			"\tyield文を使用した戻り値の場合，ReturnsをYieldsとする",
+			"",
+			"Raises:",
+			"\t例外の名前: 例外の説明（例: 引数が指定されていない場合に発生．）",
+			"",
+			"Example:",
+			"\t>>>print([i for i in example_generator(4)])",
+			"\t[0, 1, 2, 3]",
+			"",
+			"Note:",
+			"\tDo not include the 'self' parameter in the ''Args'' section."
+		]
+	},
+	"cdoc_google": {
+		"prefix": "cdoc_google",
+		"body": [
+			"\"\"\"クラスの説明のタイトル",
+			"",
+			"クラスについての説明文",
+			"",
+			"Attributes:",
+			"\t",
+			"",
+			"\"\"\"",
+		],
+		"description": [
+			"Attributes:",
+			"\t属性の名前(属性の型): 属性の説明．",
+			"",
+		]
+	},
+	"mdoc_google": {
+		"prefix": "mdoc_google",
+		"body": [
+			"\"\"\"モジュールの説明タイトル",
+			"",
+			"\t* ",
+			"",
+			"Todo:",
+			"\t*",
+			"",
+			"\"\"\"",
+		],
+		"description": [
+			"\"\"\"モジュールの説明タイトル",
+			"",
+			"\t* ソースコードの一番はじめに記載すること",
+			"\t* importより前に記載する",
+			"",
+			"Todo:",
+			"\t* conf.pyの''sphinx.ext.todo''を有効にしないと使用できない",
+			"\t* conf.pyの''todo_include_todos = True''にしないと表示されない",
+			"",
+			"\"\"\"",
+		]
+	},
+	"pltparams": {
+		"prefix": "pltparams",
+		"body": [
+			"plt.rcParams[\"font.family\"] = \"arial\"     # 全体のフォントを設定",
+			"plt.rcParams[\"xtick.direction\"] = \"in\"    # x軸の目盛線を内向きへ",
+			"plt.rcParams[\"ytick.direction\"] = \"in\"    # y軸の目盛線を内向きへ",
+			"plt.rcParams[\"xtick.minor.visible\"] = True  # x軸補助目盛りの追加",
+			"plt.rcParams[\"ytick.minor.visible\"] = True  # y軸補助目盛りの追加",
+			"plt.rcParams[\"xtick.major.width\"] = 1.5     # x軸主目盛り線の線幅",
+			"plt.rcParams[\"ytick.major.width\"] = 1.5     # y軸主目盛り線の線幅",
+			"plt.rcParams[\"xtick.minor.width\"] = 1.0     # x軸補助目盛り線の線幅",
+			"plt.rcParams[\"ytick.minor.width\"] = 1.0     # y軸補助目盛り線の線幅",
+			"plt.rcParams[\"xtick.major.size\"] = 10       # x軸主目盛り線の長さ",
+			"plt.rcParams[\"ytick.major.size\"] = 10       # y軸主目盛り線の長さ",
+			"plt.rcParams[\"xtick.minor.size\"] = 5        # x軸補助目盛り線の長さ",
+			"plt.rcParams[\"ytick.minor.size\"] = 5        # y軸補助目盛り線の長さ",
+			"plt.rcParams[\"font.size\"] = 14              # フォントの大きさ",
+			"plt.rcParams[\"axes.linewidth\"] = 1.5        # 囲みの太さ",
+		]
+	}
+}

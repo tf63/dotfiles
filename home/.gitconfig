@@ -1,0 +1,9 @@
+[user]
+	name = tf63
+	email = 74246282+tf63@users.noreply.github.com
+
+[alias]
+	tree = log --graph --pretty=format:'%x09%C(auto) %h %Cgreen %ar %Creset%x09by "%C(cyan ul)%an%Creset" %x09%C(auto)%s %d'
+
+[core]
+	editor = vim

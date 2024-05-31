@@ -1,0 +1,142 @@
+{
+	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"line": {
+		"prefix": "line",
+		"body": "----------------------------------------------------------------",
+	},
+	"ast": {
+		"prefix": "ast",
+		"body": "****************************************************************",
+	},
+	"line_equal": {
+		"prefix": "line_equal",
+		"body": "================================================================"
+	},
+	"gplt": {
+		"prefix": "gplt",
+		"body": [
+			"# gnuplot script file",
+			"",
+			"# use grid when drawing a graph",
+			"# set grid",
+			"",
+			"# set legend position",
+			"# set key right top box reverse",
+			"## left, right",
+			"## top, bottom",
+			"## outside, below",
+			"",
+			"# set size ratio",
+			"set size ratio 1 1",
+			"",
+			"# set xlabel and ylabel",
+			"# set xlabel 'Percentage'",
+			"# set ylabel 'Angle [deg.]'",
+			"",
+			"# set xtics and ytics",
+			"# set xtics 10",
+			"",
+			"# set linetype",
+			"set style line 1 linetype 1 linewidth 2 pointsize 1 pointtype 0 linecolor rgb 'blue'",
+			"set style line 2 linetype 1 linewidth 2 pointsize 1 pointtype 0 linecolor rgb 'red'",
+			"set style line 3 linetype 1 linewidth 2 pointsize 1 pointtype 0 linecolor rgb 'green'",
+			"## pointtype 0 -> ",
+			"## pointtype 1 -> +",
+			"## pointtype 2 -> x",
+			"## pointtype 3 -> *",
+			"## pointtype 4 -> □",
+			"## pointtype 5 -> ■",
+			"## pointtype 6 -> 。",
+			"",
+			"# 出力先の設定",
+			"# 出力先をpostscriptにする（カラー）",
+			"# set term postscript eps enhanced color \"Times-Roman\" 20",
+			"# 出力先をpostscriptにする（白黒）",
+			"# set term postscript eps enhanced \"Times-Roman\" 20",
+			"# 出力先をx11にする",
+			"# set term x11",
+			"# 出力先をpngにする",
+			"set term png",
+			"",
+			"set output 'output.png'",
+			"",
+			"# plot[x][y] 'datファイル, 関数'",
+			"# plot[0:90][0:90] 'sample.dat' title 'Key1' with linespoints linestyle 1, ...",
+			"# plot 'sample.dat' smooth csplines notitle linestyle 1, 'sample.dat' title 'Voltage' with points linestyle 1",
+			"# plot[15:45][-45:-5] '../src/4/senkou_katou.dat' title 'Fructose' with linespoints linestyle 1, '../src/4/senkou_katou_theo.dat' title 'Theoretical value' with linespoints linestyle 2",
+			"",
+			"# datファイルのうち、使用するデータを制限することもできる",
+			"plot 'output.dat' using 2:3 with lines linestyle 1, 'output.dat' using 5:6 with lines linestyle 2, 'output.dat' using 8:9 with lines linestyle 3",
+			"# plot 'output.dat' using 1:3 with lines linestyle 1",
+			"# f(x) = 4.38 * (sin(3.93 * x) / (3.93 * x)) ** 2",
+			"# plot f(x)",
+		],
+	},
+	"vscode_variables": {
+		"prefix": "vscode_variables",
+		"body": [
+			"${userHome} - the path of the user's home folder",
+			"${workspaceFolder} - the path of the folder opened in VS Code",
+			"${workspaceFolderBasename} - the name of the folder opened in VS Code without any slashes (/)",
+			"${file} - the current opened file",
+			"${fileWorkspaceFolder} - the current opened file's workspace folder",
+			"${relativeFile} - the current opened file relative to workspaceFolder",
+			"${relativeFileDirname} - the current opened file's dirname relative to workspaceFolder",
+			"${fileBasename} - the current opened file's basename",
+			"${fileBasenameNoExtension} - the current opened file's basename with no file extension",
+			"${fileDirname} - the current opened file's dirname",
+			"${fileExtname} - the current opened file's extension",
+			"${cwd} - the task runner's current working directory upon the startup of VS Code",
+			"${lineNumber} - the current selected line number in the active file",
+			"${selectedText} - the current selected text in the active file",
+			"${execPath} - the path to the running VS Code executable",
+			"${defaultBuildTask} - the name of the default build task",
+			"${pathSeparator} - the character used by the operating system to separate components in file paths",
+		],
+	},
+	"html_template": {
+		"prefix": "template_html",
+		"body": [
+			"<!DOCTYPE html>",
+			"<html>",
+			"<head>",
+			"\t<meta charset=\"UTF-8\">",
+			"\t<meta http-equiv=\"X-UA-Compatible\" content=\"IE-edge\">",
+			"\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+			"\t<title></title>",
+			"</head>",
+			"<body>",
+			"</body>",
+			"</html>",
+		],
+		"description": "html template"
+	},
+	"prettierrc": {
+		"prefix": "prettierrc",
+		"body": [
+			"{",
+			"\t\"printWidth\": 120",
+			"\t\"tabWidth\": 4",
+			"\t\"singleQuote\": true",
+			"\t\"trailingComma\": \"none\"",
+			"\t\"semi\": false",
+			"\t\"parser\": \"typescript\"",
+			"}"
+		]
+	}
+}

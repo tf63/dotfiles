@@ -1,0 +1,116 @@
+{
+	// Place your snippets for cpp here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"atcoder": {
+		"prefix": "atcoder",
+		"body": [
+			"#include <cstdio>",
+			"#include <iostream>",
+			"#include <vector>",
+			"#include <string>",
+			"#include <algorithm>",
+			"#include <cmath>",
+			"#include <stack>",
+			"#include <queue>",
+			"",
+			"#define ll long long",
+			"#define BIG_INT 2000000000",
+			"",
+			"using namespace std;",
+			"",
+			"int main() {",
+			"\tios_base::sync_with_stdio(false);",
+			"\tcin.tie(nullptr);",
+			"\t${0}",
+			"}",
+		]
+	},
+	// io
+	"io_digit": {
+		"prefix": "io_digit",
+		"body": [
+			"vec X(4);",
+			"scanf(\"%1d%1d%1d%1d\", &X.at(0), &X.at(1), &X.at(2), &X.at(3));",
+		]
+	},
+	// ループ
+	// for
+	"for": {
+		"prefix": "for",
+		"body": [
+			"for (int i = 0; i < ${1}; i++) {",
+			"\t${0}",
+			"}"
+		],
+	},
+	"for_bit": {
+		"prefix": "for_bit",
+		"body": [
+			"rep (bit, (1 << ${1}) {",
+			"\t",
+			"\trep (i, ${1}) {",
+			"\t\tif (bit & (1 << i)) {",
+			"\t\t\t// i",
+			"\t\t}",
+			"\t}",
+			"}",
+		]
+	},
+	// データ
+	// vector
+	"vector_pow": {
+		"prefix": "vector_pow",
+		"body": "vector<int> pow_vec{1, 10, 100, 1000, 10000, 100000, 1000000, 10000000, 100000000, 1000000000};"
+	},
+	// サンプル
+	// ----------------------------------------------------------------
+	"sample_pair": {
+		"prefix": "sample_pair",
+		"body": [
+			"pair<string, int> p(\"one\", 3);",
+			"cout << p.first << endl;  // one",
+			"",
+			"p.first = \"go\";",
+			"cout << p.first << endl;  // go",
+			"cout << p.second << endl; // 3",
+			"",
+			"p = make_pair(\"*\", 1);",
+			"",
+			"string s;",
+			"int a;",
+			"tie(s, a) = p;",
+			"cout << s << endl;  // *",
+			"cout << a << endl;  // 1",
+		]
+	},
+	"print_time_chrono": {
+		"prefix": "print_time_chrono",
+		"body": [
+			"// 時間測定",
+			"// ----------------------------------------------------------------",
+			"chrono::system_clock::time_point start, end;",
+			"",
+			"start = chrono::system_clock::now();",
+			"// 計測したい関数・処理",
+			"// ----------------------------------------------------------------",
+			"",
+			"// ----------------------------------------------------------------",
+			"end = chrono::system_clock::now();",
+			"",
+			"double time = static_cast<double>(chrono::duration_cast<chrono::microseconds>(end - start).count() / 1000.0);",
+			"cout << \"time \" << fixed << time << \"[ms]\" << endl;",
+			"// ----------------------------------------------------------------",
+		]
+	},
+}
