@@ -12,29 +12,28 @@
     "strings": true
   },
   "diffEditor.ignoreTrimWhitespace": false,
-
   "workbench.editor.showTabs": "multiple",
   "workbench.layoutControl.enabled": false,
   "workbench.colorTheme": "Tokyo Night Storm",
   "workbench.iconTheme": "material-icon-theme",
-
   "terminal.integrated.enableMultiLinePasteWarning": "never",
   "terminal.integrated.defaultProfile.osx": "fish",
-
   "files.autoGuessEncoding": true,
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
-
   "window.commandCenter": true,
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
-
   "background.windowBackgrounds": [],
-  "background.backgroundOpacity": [0.85, 0.9, 0.9, 0.9],
+  "background.backgroundOpacity": [
+    0.85,
+    0.9,
+    0.9,
+    0.9
+  ],
   "background.editorBackgrounds": [
     "/Users/tf63/Downloads/メルヘンな街並み_10.png"
   ],
-
   "remote.SSH.useLocalServer": false,
   "remote.SSH.remotePlatform": {
     "lab": "linux"
@@ -42,12 +41,13 @@
   // ================================================================
   "git.autofetch": true,
   "git.confirmSync": false,
-
   "githubIssues.queries": [
     {
       "label": "My Issues",
       "query": "is:open assignee:${user} repo:${owner}/${repository}",
-      "groupBy": ["milestone"]
+      "groupBy": [
+        "milestone"
+      ]
     },
     {
       "label": "Created Issues",
@@ -64,12 +64,15 @@
   },
   "autopep8.args": [
     "--aggressive",
-    "--indent-size=4",
+    "--indent-size",
+    "4",
     "--max-line-length",
     "119",
     "--ignore=E111, E114, E402, E501"
   ],
-  "flake8.args": ["--ignore=W293, W504, E111, E114, E402, E501"],
+  "flake8.args": [
+    "--ignore=W293, W504, E111, E114, E402, E501"
+  ],
   "python.languageServer": "Pylance",
   "python.analysis.typeCheckingMode": "basic",
   "jupyter.interactiveWindow.creationMode": "perFile",
@@ -102,7 +105,9 @@
   "markdown-mermaid.darkModeTheme": "forest",
   "markdown.marp.enableHtml": true,
   "markdown.marp.mathTypesetting": "katex", // or mathjax (katexだと\bmが使える)
-  "markdown.marp.themes": ["./theme/lab.css"],
+  "markdown.marp.themes": [
+    "./theme/lab.css"
+  ],
   "markdown.copyFiles.destination": {
     // https://code.visualstudio.com/updates/v1_79#_copy-external-media-files-into-workspace-on-drop-or-paste-for-markdown
     "*.md": "${documentDirName}/img/${documentBaseName}.png"
@@ -154,14 +159,20 @@
   "latex-workshop.latex.recipes": [
     {
       "name": "latexmk",
-      "tools": ["latexmk"]
+      "tools": [
+        "latexmk"
+      ]
     }
   ],
   "latex-workshop.latex.tools": [
     {
       "name": "latexmk",
       "command": "latexmk",
-      "args": ["-silent", "-outdir=%OUTDIR%", "%DOC%"]
+      "args": [
+        "-silent",
+        "-outdir=%OUTDIR%",
+        "%DOC%"
+      ]
     }
   ],
   "latex-workshop.view.pdf.viewer": "tab",
@@ -170,27 +181,60 @@
   "explorer.compactFolders": false,
   "explorer.autoReveal": false,
   "workbench.startupEditor": "none",
-
   "accessibility.signals.chatRequestSent": {
     "sound": "off"
   },
-  "accessibility.signals.clear": { "sound": "off" },
-  "accessibility.signals.lineHasFoldedArea": { "sound": "off" },
-  "accessibility.signals.lineHasInlineSuggestion": { "sound": "off" },
-  "accessibility.signals.noInlayHints": { "sound": "off" },
-  "accessibility.signals.notebookCellCompleted": { "sound": "off" },
-  "accessibility.signals.onDebugBreak": { "sound": "off" },
-  "accessibility.signals.notebookCellFailed": { "sound": "off" },
-  "accessibility.signals.taskCompleted": { "sound": "off" },
-  "accessibility.signals.terminalQuickFix": { "sound": "off" },
-  "accessibility.signals.terminalCommandFailed": { "sound": "off" },
-  "accessibility.signals.terminalBell": { "sound": "off" },
-  "accessibility.signals.taskFailed": { "sound": "off" },
-  "accessibility.signals.lineHasWarning": { "sound": "off" },
-  "accessibility.signals.lineHasError": { "sound": "off" },
-  "accessibility.signals.lineHasBreakpoint": { "sound": "off" },
-  "accessibility.signals.diffLineModified": { "sound": "off" },
-  "accessibility.signals.diffLineInserted": { "sound": "off" },
+  "accessibility.signals.clear": {
+    "sound": "off"
+  },
+  "accessibility.signals.lineHasFoldedArea": {
+    "sound": "off"
+  },
+  "accessibility.signals.lineHasInlineSuggestion": {
+    "sound": "off"
+  },
+  "accessibility.signals.noInlayHints": {
+    "sound": "off"
+  },
+  "accessibility.signals.notebookCellCompleted": {
+    "sound": "off"
+  },
+  "accessibility.signals.onDebugBreak": {
+    "sound": "off"
+  },
+  "accessibility.signals.notebookCellFailed": {
+    "sound": "off"
+  },
+  "accessibility.signals.taskCompleted": {
+    "sound": "off"
+  },
+  "accessibility.signals.terminalQuickFix": {
+    "sound": "off"
+  },
+  "accessibility.signals.terminalCommandFailed": {
+    "sound": "off"
+  },
+  "accessibility.signals.terminalBell": {
+    "sound": "off"
+  },
+  "accessibility.signals.taskFailed": {
+    "sound": "off"
+  },
+  "accessibility.signals.lineHasWarning": {
+    "sound": "off"
+  },
+  "accessibility.signals.lineHasError": {
+    "sound": "off"
+  },
+  "accessibility.signals.lineHasBreakpoint": {
+    "sound": "off"
+  },
+  "accessibility.signals.diffLineModified": {
+    "sound": "off"
+  },
+  "accessibility.signals.diffLineInserted": {
+    "sound": "off"
+  },
   "accessibility.signals.diffLineDeleted": {
     "sound": "off"
   },
