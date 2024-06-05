@@ -77,12 +77,12 @@ set __fish_git_prompt_showupstream 'yes'
 # set __fish_git_prompt_color_upstream_behind red
 
 # Status Chars
-set __fish_git_prompt_char_dirtystate '⚡'
-set __fish_git_prompt_char_stagedstate '→'
-set __fish_git_prompt_char_untrackedfiles '☡'
-set __fish_git_prompt_char_stashstate '↩'
-set __fish_git_prompt_char_upstream_ahead '+'
-set __fish_git_prompt_char_upstream_behind '-'
+set __fish_git_prompt_char_dirtystate '⚡ -- dirty'
+set __fish_git_prompt_char_stagedstate '→ -- staged'
+set __fish_git_prompt_char_untrackedfiles '☡ -- untracked'
+set __fish_git_prompt_char_stashstate '↩ -- stash'
+set __fish_git_prompt_char_upstream_ahead '+ -- upstream ahead'
+set __fish_git_prompt_char_upstream_behind '- -- upstream behind'
 
 
 function fish_prompt
@@ -118,6 +118,9 @@ alias pn="pnpm"
 alias pe="pnpm exec"
 alias pa="pnpm add"
 
+alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
+
+eval (gh completion -s fish| source)
 # nvm ----------------------------------------------------------------
 source ~/.config/fish/functions/__check_nvm.fish
 

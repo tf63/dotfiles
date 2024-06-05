@@ -36,7 +36,8 @@
   ],
   "remote.SSH.useLocalServer": false,
   "remote.SSH.remotePlatform": {
-    "lab": "linux"
+    "lab": "linux",
+    "home": "linux"
   },
   // ================================================================
   "git.autofetch": true,
