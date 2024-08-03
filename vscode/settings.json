@@ -21,14 +21,21 @@
   "files.autoGuessEncoding": true,
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "**/dist/**/": true,
+    "**/.hg/store/**": true,
+    "**/venv/**": true,
+    "**/.venv/**": true,
+    "**/.next/**": true
+  },
   "window.commandCenter": true,
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
   "background.windowBackgrounds": [],
   "background.backgroundOpacity": [0.85, 0.9, 0.9, 0.9],
-  "background.editorBackgrounds": [
-    "/Users/tf63/Downloads/メルヘンな街並み_10.png"
-  ],
   "remote.SSH.useLocalServer": false,
   "remote.SSH.remotePlatform": {
     "lab": "linux",
@@ -73,23 +80,28 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "typescript.preferences.importModuleSpecifier": "non-relative"
   },
   "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "typescript.preferences.importModuleSpecifier": "non-relative"
   },
   "typescript.updateImportsOnFileMove.enabled": "never",
   "prisma.showPrismaDataPlatformNotification": false,
   "eslint.useESLintClass": true,
+  // "prettier.resolveGlobalModules": true,
+  // "prettier.prettierPath": "/Users/tf63/.volta/tools/image/packages/prettier/lib/node_modules/prettier/",
   // ================================================================
   "[markdown]": {
-    "editor.formatOnSave": false
+    "editor.formatOnSave": true
   },
   "[css]": {
     "editor.defaultFormatter": "aeschli.vscode-css-formatter"
   },
   "[yaml]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
   },
   "hediet.vscode-drawio.theme": "Kennedy",
   "hediet.vscode-drawio.resizeImages": null,
@@ -229,7 +241,10 @@
   "window.customTitleBarVisibility": "never",
   "github.copilot.editor.enableAutoCompletions": true,
   "keyboard.dispatch": "keyCode",
-  "accessibility.signalOptions": {
-    "volume": 0
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
   }
 }
