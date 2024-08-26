@@ -122,14 +122,11 @@ alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
 
 eval (gh completion -s fish| source)
 # nvm ----------------------------------------------------------------
-source ~/.config/fish/functions/__check_nvm.fish
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/tf63/Downloads/google-cloud-sdk/path.fish.inc' ]; . '/Users/tf63/Downloads/google-cloud-sdk/path.fish.inc'; end
 set -gx VOLTA_HOME "$HOME/.volta"
 set -gx PATH "$VOLTA_HOME/bin" $PATH
-
-
 
 # pnpm
 set -gx PNPM_HOME "/Users/tf63/.pnpm"
@@ -137,3 +134,6 @@ if not string match -q -- $PNPM_HOME $PATH
   set -gx PATH "$PNPM_HOME" $PATH
 end
 # pnpm end
+
+
+eval "$(goenv init -)"
