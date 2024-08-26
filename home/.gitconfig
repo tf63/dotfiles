@@ -7,3 +7,9 @@
 
 [core]
 	editor = vim
+
+[gpg]
+	format = ssh
+
+[commit]
+	gpgsign = true
