@@ -528,7 +528,7 @@
                             },
                             "to": [
                                 {
-                                    "key_code": "left_option"
+                                    "key_code": "japanese_eisuu"
                                 }
                             ]
                         },
@@ -544,7 +544,7 @@
                         },
                         {
                             "from": {
-                                "key_code": "right_option"
+                                "key_code": "right_command"
                             },
                             "to": [
                                 {
@@ -559,16 +559,6 @@
                             "to": [
                                 {
                                     "key_code": "right_command"
-                                }
-                            ]
-                        },
-                        {
-                            "from": {
-                                "key_code": "left_option"
-                            },
-                            "to": [
-                                {
-                                    "key_code": "japanese_eisuu"
                                 }
                             ]
                         }
