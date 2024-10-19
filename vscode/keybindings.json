@@ -74,11 +74,6 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+d",
-    "command": "deleteLeft",
-    "when": "editorTextFocus"
-  },
-  {
     "key": "ctrl+shift+d",
     "command": "deleteRight",
     "when": "editorTextFocus"
@@ -98,7 +93,7 @@
   // ----------------------------------------------------------------
   // Ctrl+; Replace
   {
-    "key": "ctrl+[Semicolon] ctrl+r",
+    "key": "ctrl+; ctrl+r",
     "command": "editor.action.startFindReplaceAction",
     "when": "editorFocus || editorIsOpen"
   },
@@ -304,10 +299,6 @@
     "command": "workbench.action.previousEditor"
   },
   {
-    "key": "ctrl+shift+]",
-    "command": "workbench.action.moveEditorToNextGroup"
-  },
-  {
     "key": "ctrl+m",
     "command": "editor.action.triggerSuggest",
     "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
@@ -319,14 +310,6 @@
   {
     "key": "ctrl+w",
     "command": "-workbench.action.switchWindow"
-  },
-  {
-    "key": "ctrl+w",
-    "command": "workbench.action.closeActiveEditor"
-  },
-  {
-    "key": "ctrl+shift+w",
-    "command": "workbench.action.closeUnmodifiedEditors"
   },
   {
     "key": "shift+cmd+t",
@@ -350,10 +333,6 @@
     "key": "ctrl+o",
     "command": "-lineBreakInsert",
     "when": "textInputFocus && !editorReadonly"
-  },
-  {
-    "key": "ctrl+o",
-    "command": "workbench.action.quickOpen"
   },
   {
     "key": "ctrl+[Semicolon] ctrl+f",
@@ -391,10 +370,6 @@
     "when": "inlineSuggestionVisible && !editorReadonly"
   },
   {
-    "key": "ctrl+shift+[",
-    "command": "workbench.action.moveEditorToPreviousGroup"
-  },
-  {
     "key": "ctrl+y",
     "command": "redo"
   },
@@ -422,11 +397,11 @@
     "command": "workbench.action.toggleSidebarVisibility"
   },
   {
-    "key": "alt+[",
+    "key": "ctrl+shift+[",
     "command": "workbench.action.showPreviousWindowTab"
   },
   {
-    "key": "alt+]",
+    "key": "ctrl+shift+]",
     "command": "workbench.action.showNextWindowTab"
   },
   {
@@ -480,5 +455,73 @@
     "key": "ctrl+enter",
     "command": "-workbench.action.chat.insertCodeBlock",
     "when": "accessibleViewInCodeBlock && chatIsEnabled || chatIsEnabled && inChat && !inChatInput"
+  },
+  {
+    "key": "ctrl+shift+w",
+    "command": "workbench.action.closeOtherEditors"
+  },
+  {
+    "key": "alt+cmd+t",
+    "command": "-workbench.action.closeOtherEditors"
+  },
+  {
+    "key": "ctrl+r",
+    "command": "workbench.action.quickOpen"
+  },
+  {
+    "key": "cmd+p",
+    "command": "-workbench.action.quickOpen"
+  },
+  {
+    "key": "ctrl+d",
+    "command": "-deleteRight",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+d",
+    "command": "deleteRight",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+; ctrl+w",
+    "command": "workbench.action.closeActiveEditor"
+  },
+  {
+    "key": "ctrl+shift+r",
+    "command": "-editor.action.refactor",
+    "when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+r ctrl+i",
+    "command": "-editor.action.codeAction",
+    "when": "editorTextFocus && editorLangId =~ /^(c|(cuda-)?cpp)$/ && !(config.C_Cpp.intelliSenseEngine =~ /^[dD]isabled$/)"
+  },
+  {
+    "key": "ctrl+shift+r ctrl+e",
+    "command": "-editor.action.codeAction",
+    "when": "editorTextFocus && editorLangId =~ /^(c|(cuda-)?cpp)$/ && !(config.C_Cpp.intelliSenseEngine =~ /^[dD]isabled$/)"
+  },
+  {
+    "key": "ctrl+shift+r",
+    "command": "-workbench.action.quickOpenNavigatePreviousInRecentFilesPicker",
+    "when": "inQuickOpen && inRecentFilesPicker"
+  },
+  {
+    "key": "ctrl+shift+r",
+    "command": "workbench.action.openRecent"
+  },
+  {
+    "key": "ctrl+r",
+    "command": "-workbench.action.openRecent"
+  },
+  {
+    "key": "ctrl+shift+r",
+    "command": "workbench.action.quickOpenNavigateNextInRecentFilesPicker",
+    "when": "inQuickOpen && inRecentFilesPicker"
+  },
+  {
+    "key": "ctrl+r",
+    "command": "-workbench.action.quickOpenNavigateNextInRecentFilesPicker",
+    "when": "inQuickOpen && inRecentFilesPicker"
   }
 ]
