@@ -103,6 +103,11 @@ function fish_prompt
   set_color normal
 end
 
+# git config --------------------------------------------------------
+alias gs="git status"
+alias gpl="git pull"
+alias gph="git push"
+
 # kitty config ------------------------------------------------------
 alias icat="kitty +kitten icat"
 
@@ -125,9 +130,11 @@ eval (gh completion -s fish| source)
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/tf63/Downloads/google-cloud-sdk/path.fish.inc' ]; . '/Users/tf63/Downloads/google-cloud-sdk/path.fish.inc'; end
+
 set -gx VOLTA_HOME "$HOME/.volta"
 set -gx PATH "$VOLTA_HOME/bin" $PATH
-
+set -gx PATH "/usr/local/go/bin" $PATH
+set -gx PATH "$HOME/go/bin" $PATH
 # pnpm
 set -gx PNPM_HOME "/Users/tf63/.pnpm"
 if not string match -q -- $PNPM_HOME $PATH
@@ -135,5 +142,7 @@ if not string match -q -- $PNPM_HOME $PATH
 end
 # pnpm end
 
+set -gx FZF_CTRL_T_OPTS "--walker-skip .git,node_modules,target,.venv,venv --preview 'bat -n --color=always {}' --bind 'ctrl-/:change-preview-window(down|hidden|)'"
+set -gx FZF_DEFAULT_OPTS "--walker-skip .git,node_modules,target,.venv,venv"
 
-eval "$(goenv init -)"
+fzf --fish | source
