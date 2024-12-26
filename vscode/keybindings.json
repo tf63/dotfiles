@@ -465,7 +465,7 @@
     "command": "-workbench.action.closeOtherEditors"
   },
   {
-    "key": "ctrl+r",
+    "key": "ctrl+; ctrl+t",
     "command": "workbench.action.quickOpen"
   },
   {
