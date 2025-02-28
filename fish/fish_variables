@@ -70,4 +70,4 @@ SETUVAR fish_pager_color_selected_background:\x2d\x2dbackground\x3dbrblack
 SETUVAR fish_pager_color_selected_completion:D1E9FF
 SETUVAR fish_pager_color_selected_description:D1E9FF
 SETUVAR fish_pager_color_selected_prefix:D1E9FF
-SETUVAR fish_user_paths:\x1d
+SETUVAR fish_user_paths:/Users/tf63/\x2erye/shims

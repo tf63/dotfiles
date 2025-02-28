@@ -11,7 +11,7 @@
   },
   "diffEditor.ignoreTrimWhitespace": true,
   "workbench.layoutControl.enabled": false,
-  "workbench.colorTheme": "Palenight (Mild Contrast)",
+  "workbench.colorTheme": "Tokyo Night Storm",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "none",
   "terminal.integrated.enableMultiLinePasteWarning": "never",
