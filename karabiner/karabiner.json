@@ -194,16 +194,32 @@
                     "manipulate_caps_lock_led": false,
                     "simple_modifications": [
                         {
-                            "from": { "key_code": "caps_lock" },
+                            "from": { "apple_vendor_top_case_key_code": "keyboard_fn" },
                             "to": [{ "key_code": "left_command" }]
+                        },
+                        {
+                            "from": { "key_code": "caps_lock" },
+                            "to": [{ "key_code": "left_control" }]
                         },
                         {
                             "from": { "key_code": "f3" },
                             "to": [{ "key_code": "grave_accent_and_tilde" }]
                         },
                         {
-                            "from": { "key_code": "right_shift" },
-                            "to": [{ "key_code": "spacebar" }]
+                            "from": { "key_code": "left_command" },
+                            "to": [{ "key_code": "japanese_eisuu" }]
+                        },
+                        {
+                            "from": { "key_code": "left_control" },
+                            "to": [{ "key_code": "left_command" }]
+                        },
+                        {
+                            "from": { "key_code": "right_command" },
+                            "to": [{ "key_code": "japanese_kana" }]
+                        },
+                        {
+                            "from": { "key_code": "right_option" },
+                            "to": [{ "key_code": "right_command" }]
                         }
                     ]
                 },
@@ -218,11 +234,10 @@
                 {
                     "disable_built_in_keyboard_if_exists": true,
                     "identifiers": {
-                        "device_address": "e8-75-e6-a2-ed-4e",
                         "is_keyboard": true,
-                        "is_pointing_device": true
+                        "product_id": 12885,
+                        "vendor_id": 6645
                     },
-                    "ignore": false,
                     "simple_modifications": [
                         {
                             "from": { "key_code": "caps_lock" },
@@ -277,18 +292,19 @@
                         "vendor_id": 1452
                     },
                     "ignore": false,
+                    "manipulate_caps_lock_led": false,
                     "simple_modifications": [
                         {
                             "from": { "key_code": "caps_lock" },
                             "to": [{ "key_code": "left_control" }]
                         },
                         {
-                            "from": { "key_code": "left_control" },
-                            "to": [{ "key_code": "left_command" }]
-                        },
-                        {
                             "from": { "key_code": "left_command" },
                             "to": [{ "key_code": "japanese_eisuu" }]
+                        },
+                        {
+                            "from": { "key_code": "left_control" },
+                            "to": [{ "key_code": "left_command" }]
                         },
                         {
                             "from": { "key_code": "right_command" },
@@ -297,10 +313,9 @@
                     ]
                 }
             ],
-            "virtual_hid_keyboard": {
-                "country_code": 0,
-                "keyboard_type_v2": "ansi"
-            }
+            "name": "Default profile",
+            "selected": true,
+            "virtual_hid_keyboard": { "indicate_sticky_modifier_keys_state": false }
         }
     ]
 }

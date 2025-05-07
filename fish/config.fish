@@ -77,10 +77,10 @@ set __fish_git_prompt_showupstream 'yes'
 # set __fish_git_prompt_color_upstream_behind red
 
 # Status Chars
-set __fish_git_prompt_char_dirtystate '⚡ -- dirty'
-set __fish_git_prompt_char_stagedstate '→ -- staged'
-set __fish_git_prompt_char_untrackedfiles '☡ -- untracked'
-set __fish_git_prompt_char_stashstate '↩ -- stash'
+set __fish_git_prompt_char_dirtystate '⚡'
+set __fish_git_prompt_char_stagedstate '→'
+set __fish_git_prompt_char_untrackedfiles '☡'
+set __fish_git_prompt_char_stashstate '↩'
 set __fish_git_prompt_char_upstream_ahead '+ -- upstream ahead'
 set __fish_git_prompt_char_upstream_behind '- -- upstream behind'
 
@@ -108,6 +108,8 @@ alias gs="git status"
 alias gpl="git pull"
 alias gph="git push"
 
+alias lg="lazygit"
+
 # kitty config ------------------------------------------------------
 alias icat="kitty +kitten icat"
 
@@ -123,8 +125,6 @@ alias pn="pnpm"
 alias pe="pnpm exec"
 alias pa="pnpm add"
 
-alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
-
 eval (gh completion -s fish| source)
 # nvm ----------------------------------------------------------------
 
@@ -135,8 +135,9 @@ set -gx VOLTA_HOME "$HOME/.volta"
 set -gx PATH "$VOLTA_HOME/bin" $PATH
 set -gx PATH "/usr/local/go/bin" $PATH
 set -gx PATH "$HOME/go/bin" $PATH
+
 # pnpm
-set -gx PNPM_HOME "/Users/tf63/.pnpm"
+set -gx PNPM_HOME "$HOME/.pnpm"
 if not string match -q -- $PNPM_HOME $PATH
   set -gx PATH "$PNPM_HOME" $PATH
 end
