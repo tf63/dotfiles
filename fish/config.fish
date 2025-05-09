@@ -103,6 +103,10 @@ function fish_prompt
   set_color normal
 end
 
+# git command -----------------------------------------------------------
+alias proot='cd $(git rev-parse --show-toplevel)'
+alias lg='lazygit'
+
 # git config --------------------------------------------------------
 alias gs="git status"
 alias gpl="git pull"
