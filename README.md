@@ -1,9 +1,9 @@
 # dotfiles
 
-## kitty
-![alt text](img/README.png)
+## Terminal
+
 kitty conf https://sw.kovidgoyal.net/kitty/conf/
 
 kitty setup https://www.how2shout.com/linux/how-to-install-kitty-terminal-on-ubuntu-22-04-or-20-04
 
-background https://sakuranouta.biz/fairy-tale-townscape/
+![alt text](img/README-1.png)
