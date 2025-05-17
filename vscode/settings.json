@@ -162,6 +162,12 @@
     }
   ],
   "latex-workshop.view.pdf.viewer": "tab",
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
   "accessibility.signals.chatRequestSent": {
     "sound": "off"
   },
@@ -221,13 +227,6 @@
   },
   "accessibility.signals.progress": {
     "sound": "off"
-  },
-  "github.copilot.editor.enableAutoCompletions": true,
-  "github.copilot.enable": {
-    "*": true,
-    "plaintext": false,
-    "markdown": false,
-    "scminput": false
   },
   "accessibility.signals.voiceRecordingStopped": {
     "sound": "on"
