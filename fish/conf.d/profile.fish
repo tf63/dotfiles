@@ -14,5 +14,6 @@ if not string match -q -- $PNPM_HOME $PATH
   set -gx PATH "$PNPM_HOME" $PATH
 end
 
-# google cloud sdk
-if [ -f '/Users/tf63/Downloads/google-cloud-sdk/path.fish.inc' ]; . '/Users/tf63/Downloads/google-cloud-sdk/path.fish.inc'; end
+# (やるならプロジェクト単位でやった方が良い)
+# set -gx NODE_TLS_REJECT_UNAUTHORIZED 0
+

@@ -8,6 +8,7 @@ alias gpl="git pull"
 alias gph="git push"
 
 alias lg="lazygit"
+alias ldr="lazydocker"
 
 # kitty config ------------------------------------------------------
 alias icat="kitty +kitten icat"
