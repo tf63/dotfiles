@@ -13,4 +13,6 @@
 # ln -sf ~/project/dotfiles/home/.zshrc ~/.zshrc
 # ln -sf ~/project/dotfiles/home/.profile ~/.profile
 
+# ln -sf ~/project/dotfiles/mise/config.toml ~/.config/mise/config.toml
+
 # ln -sf ~/project/dotfiles/nvim ~/.config/nvim

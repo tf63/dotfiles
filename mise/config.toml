@@ -1,0 +1,16 @@
+[settings]
+idiomatic_version_file_enable_tools = []
+experimental = true
+
+[tools]
+fd = "10.3.0"
+ghq = "1.8.0"
+neovim = "0.11.4"
+"npm:@github/copilot" = "latest"
+usage = "latest"
+bat = "0.26.1"
+
+
+[tasks]
+show-config = { run = "bat ~/.config/mise/config.toml" }
+show-local-config = { run = "bat ~/.config/mise/config.local.toml" }
