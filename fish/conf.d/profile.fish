@@ -16,4 +16,3 @@ end
 
 # (やるならプロジェクト単位でやった方が良い)
 # set -gx NODE_TLS_REJECT_UNAUTHORIZED 0
-
