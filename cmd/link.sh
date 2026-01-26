@@ -12,3 +12,5 @@
 # ln -sf ~/project/dotfiles/home/.gitconfig ~/.gitconfig
 # ln -sf ~/project/dotfiles/home/.zshrc ~/.zshrc
 # ln -sf ~/project/dotfiles/home/.profile ~/.profile
+
+# ln -sf ~/project/dotfiles/nvim ~/.config/nvim
