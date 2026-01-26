@@ -523,5 +523,14 @@
     "key": "ctrl+r",
     "command": "-workbench.action.quickOpenNavigateNextInRecentFilesPicker",
     "when": "inQuickOpen && inRecentFilesPicker"
+  },
+  {
+    "key": "ctrl+; ctrl+n",
+    "command": "workbench.action.openChat",
+  },
+  {
+    "key": "cmd+n",
+    "command": "-workbench.action.openChat",
+    "when": "chatIsEnabled && inChat && inChatEditor"
   }
 ]
