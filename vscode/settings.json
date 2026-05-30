@@ -1,20 +1,22 @@
 {
   "editor.tabSize": 2,
   "editor.suggestSelection": "first",
+  "editor.snippetSuggestions": "bottom",
   "editor.minimap.enabled": false,
   "editor.formatOnPaste": false,
   "editor.formatOnSave": true,
   "editor.formatOnType": false,
   "editor.codeActionsOnSave": {},
   "editor.quickSuggestions": {
-    "strings": true
+    "other": "on",
+		"comments": "on",
+		"strings": "on"
   },
-  "diffEditor.renderSideBySide": true,
-  "diffEditor.hideUnchangedRegions.enabled": true,
-  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.renderSideBySide": false,
+  "diffEditor.ignoreTrimWhitespace": true,
   "workbench.layoutControl.enabled": false,
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Bearded Theme OLED (Experimental)",
+  "workbench.colorTheme": "Tokyo Night",
   "workbench.startupEditor": "none",
   "terminal.integrated.enableMultiLinePasteWarning": "never",
   "terminal.integrated.defaultProfile.osx": "fish",
@@ -30,7 +32,7 @@
     "**/venv/**": true,
     "**/.venv/**": true,
     "**/.next/**": true,
-    "**/.turbo/**": true
+    "**/.turbo/**": true,
   },
   "window.commandCenter": true,
   "window.nativeTabs": true,
@@ -40,7 +42,7 @@
     "*": true,
     "plaintext": false,
     "markdown": true,
-    "scminput": false
+    "scminput": false,
   },
   "github.copilot.nextEditSuggestions.enabled": true,
   "gitlens.ai.model": "vscode",
@@ -56,7 +58,7 @@
   "remote.SSH.useLocalServer": false,
   "remote.SSH.remotePlatform": {
     "lab": "linux",
-    "home": "linux"
+    "home": "linux",
   },
   // ================================================================
   "git.autofetch": true,
@@ -65,16 +67,16 @@
     {
       "label": "My Issues",
       "query": "is:open assignee:${user} repo:${owner}/${repository}",
-      "groupBy": ["milestone"]
+      "groupBy": ["milestone"],
     },
     {
       "label": "Created Issues",
-      "query": "author:${user} state:open repo:${owner}/${repository} sort:created-desc"
+      "query": "author:${user} state:open repo:${owner}/${repository} sort:created-desc",
     },
     {
       "label": "Recent Issues",
-      "query": "state:open repo:${owner}/${repository} sort:updated-desc"
-    }
+      "query": "state:open repo:${owner}/${repository} sort:updated-desc",
+    },
   ],
   // ================================================================
   "[python]": {},
@@ -84,7 +86,7 @@
     "4",
     "--max-line-length",
     "119",
-    "--ignore=E111, E114, E402, E501"
+    "--ignore=E111, E114, E402, E501",
   ],
   "flake8.args": ["--ignore=W293, W504, E111, E114, E402, E501"],
   "python.languageServer": "Pylance",
@@ -93,10 +95,10 @@
   // ================================================================
   "[javascript]": {},
   "[typescript]": {
-    "typescript.preferences.importModuleSpecifier": "non-relative"
+    "typescript.preferences.importModuleSpecifier": "non-relative",
   },
   "[typescriptreact]": {
-    "typescript.preferences.importModuleSpecifier": "non-relative"
+    "typescript.preferences.importModuleSpecifier": "non-relative",
   },
   "prisma.showPrismaDataPlatformNotification": false,
   "prettier.useEditorConfig": false,
@@ -113,32 +115,31 @@
   "markdown.marp.themes": ["./theme/lab.css"],
   "markdown.copyFiles.destination": {
     // https://code.visualstudio.com/updates/v1_79#_copy-external-media-files-into-workspace-on-drop-or-paste-for-markdown
-    "*.md": "${documentDirName}/img/${documentBaseName}.png"
+    "*.md": "${documentDirName}/img/${documentBaseName}.png",
+    "*.mdx": "${documentDirName}/img/${documentBaseName}.png",
   },
   // ================================================================
   "[cpp]": {
-    "editor.tabSize": 4
+    "editor.tabSize": 4,
   },
   "cmake.configureOnOpen": false,
   "C_Cpp.clang_format_style": "Google",
   // ================================================================
   "[php]": {},
   // ================================================================
-  "[ruby]": {
-    "editor.defaultFormatter": "testdouble.vscode-standard-ruby"
-  },
+  "[ruby]": {},
   "[erb]": {
-    "editor.defaultFormatter": "manuelpuyol.erb-linter"
+    "editor.defaultFormatter": "manuelpuyol.erb-linter",
   },
   "tailwindCSS.includeLanguages": {
-    "erb": "html"
+    "erb": "html",
   },
   // ================================================================
   "[tex]": {
-    "editor.suggest.snippetsPreventQuickSuggestions": false
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
   },
   "[latex]": {
-    "editor.suggest.snippetsPreventQuickSuggestions": false
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
   },
   "latex-workshop.intellisense.package.enabled": true,
   "latex-workshop.latex.clean.fileTypes": [
@@ -164,108 +165,117 @@
     "*.snm",
     "*.nav",
     "*.dvi",
-    "*.synctex.gz"
+    "*.synctex.gz",
   ],
   "latex-workshop.latex.outDir": "out",
   "latex-workshop.latex.recipes": [
     {
       "name": "latexmk",
-      "tools": ["latexmk"]
-    }
+      "tools": ["latexmk"],
+    },
   ],
   "latex-workshop.latex.tools": [
     {
       "name": "latexmk",
       "command": "latexmk",
-      "args": ["-silent", "-outdir=%OUTDIR%", "%DOC%"]
-    }
+      "args": ["-silent", "-outdir=%OUTDIR%", "%DOC%"],
+    },
   ],
   "latex-workshop.view.pdf.viewer": "tab",
   "accessibility.signals.chatRequestSent": {
-    "sound": "off"
+    "sound": "off",
   },
   "accessibility.signals.clear": {
-    "sound": "off"
+    "sound": "off",
   },
   "accessibility.signals.lineHasFoldedArea": {
-    "sound": "off"
+    "sound": "off",
   },
   "accessibility.signals.lineHasInlineSuggestion": {
-    "sound": "off"
+    "sound": "off",
   },
   "accessibility.signals.noInlayHints": {
-    "sound": "off"
+    "sound": "off",
   },
   "accessibility.signals.notebookCellCompleted": {
-    "sound": "off"
+    "sound": "off",
   },
   "accessibility.signals.onDebugBreak": {
-    "sound": "off"
+    "sound": "off",
   },
   "accessibility.signals.notebookCellFailed": {
-    "sound": "off"
+    "sound": "off",
   },
   "accessibility.signals.taskCompleted": {
-    "sound": "off"
+    "sound": "off",
   },
   "accessibility.signals.terminalQuickFix": {
-    "sound": "off"
+    "sound": "off",
   },
   "accessibility.signals.terminalCommandFailed": {
-    "sound": "off"
+    "sound": "off",
   },
   "accessibility.signals.terminalBell": {
-    "sound": "off"
+    "sound": "off",
   },
   "accessibility.signals.taskFailed": {
-    "sound": "off"
+    "sound": "off",
   },
   "accessibility.signals.lineHasWarning": {
-    "sound": "off"
+    "sound": "off",
   },
   "accessibility.signals.lineHasError": {
-    "sound": "off"
+    "sound": "off",
   },
   "accessibility.signals.lineHasBreakpoint": {
-    "sound": "off"
+    "sound": "off",
   },
   "accessibility.signals.diffLineModified": {
-    "sound": "off"
+    "sound": "off",
   },
   "accessibility.signals.diffLineInserted": {
-    "sound": "off"
+    "sound": "off",
   },
   "accessibility.signals.diffLineDeleted": {
-    "sound": "off"
+    "sound": "off",
   },
   "accessibility.signals.progress": {
-    "sound": "off"
+    "sound": "off",
   },
   "accessibility.signals.voiceRecordingStopped": {
-    "sound": "off"
+    "sound": "off",
   },
   "accessibility.signals.terminalCommandSucceeded": {
-    "sound": "off"
+    "sound": "off",
   },
   "accessibility.signals.positionHasWarning": {
-    "sound": "off"
+    "sound": "off",
   },
   "accessibility.signals.positionHasError": {
-    "sound": "off"
+    "sound": "off",
   },
   "accessibility.signals.editsUndone": {
-    "sound": "off"
+    "sound": "off",
   },
   "accessibility.signals.editsKept": {
-    "sound": "off"
+    "sound": "off",
   },
   "accessibility.signals.codeActionTriggered": {
-    "sound": "off"
+    "sound": "off",
   },
   "accessibility.signals.codeActionApplied": {
-    "sound": "off"
+    "sound": "off",
   },
   "accessibility.signals.chatEditModifiedFile": {
-    "sound": "off"
-  }
+    "sound": "off",
+  },
+  "json.schemaDownload.trustedDomains": {
+    "https://schemastore.azurewebsites.net/": true,
+    "https://raw.githubusercontent.com/": true,
+    "https://www.schemastore.org/": true,
+    "https://json.schemastore.org/": true,
+    "https://json-schema.org/": true,
+    "https://biomejs.dev": true,
+  },
+  "chat.viewSessions.orientation": "stacked",
 }
