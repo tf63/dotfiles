@@ -6,10 +6,10 @@ experimental = true
 fd = "10.3.0"
 ghq = "1.8.0"
 neovim = "0.11.4"
-"npm:@github/copilot" = "latest"
-usage = "latest"
+"npm:@github/copilot" = "1.0.21"
+usage = "2.11"
 bat = "0.26.1"
-
+"github:cli/cli" = "2.89.0"
 
 [tasks]
 show-config = { run = "bat ~/.config/mise/config.toml" }
