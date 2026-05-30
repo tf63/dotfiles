@@ -37,39 +37,6 @@
                                     }
                                 ],
                                 "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "e",
-                                    "modifiers": {
-                                        "mandatory": ["left_control"],
-                                        "optional": ["any"]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "end",
-                                        "modifiers": []
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-
-                                "from": {
-                                    "key_code": "a",
-                                    "modifiers": {
-                                        "mandatory": ["left_control"],
-                                        "optional": ["any"]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "home",
-                                        "modifiers": []
-                                    }
-                                ],
-                                "type": "basic"
                             }
                         ]
                     },
@@ -397,19 +364,15 @@
                             "to": [{ "key_code": "left_control" }]
                         },
                         {
-                            "from": { "key_code": "left_command" },
-                            "to": [{ "key_code": "left_option" }]
-                        },
-                        {
                             "from": { "key_code": "left_control" },
                             "to": [{ "key_code": "left_command" }]
                         },
                         {
-                            "from": { "key_code": "left_option" },
+                            "from": { "key_code": "left_command" },
                             "to": [{ "key_code": "japanese_eisuu" }]
                         },
                         {
-                            "from": { "key_code": "right_option" },
+                            "from": { "key_code": "right_command" },
                             "to": [{ "key_code": "japanese_kana" }]
                         }
                     ]
