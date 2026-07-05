@@ -547,6 +547,10 @@
   },
   {
     "key": "ctrl+shift+q",
+    "command": "workbench.action.terminal.moveToEditor",
+  },
+  {
+    "key": "ctrl+shift+q",
     "command": "-workbench.action.quickOpenNavigatePreviousInViewPicker",
     "when": "inQuickOpen && inViewsPicker",
   },
