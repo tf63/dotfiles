@@ -1,0 +1,37 @@
+onboarding = false
+
+[terminal]
+default_shell = "fish"
+
+[keys]
+prefix = "ctrl+f"
+
+goto = "prefix+g"
+detach = "prefix+q"
+copy_mode = "prefix+c"
+
+new_tab = "prefix+enter"
+rename_tab = "prefix+r"
+previous_tab = ["prefix+y", "prefix+ctrl+y"]
+next_tab = ["prefix+o", "prefix+ctrl+o"]
+
+new_workspace = "prefix+shift+enter"
+rename_workspace = "prefix+shift+r"
+previous_workspace = ["prefix+i", "prefix+ctrl+i"]
+next_workspace = ["prefix+u", "prefix+ctrl+u"]
+
+split_horizontal = "prefix+ctrl+,"
+split_vertical = "prefix+ctrl+."
+
+focus_agent = "prefix+1..9"
+
+[ui]
+show_agent_labels_on_pane_borders = true
+
+[ui.sound]
+enabled = false
+
+[theme]
+name = "tokyo-night"
+auto_switch = false
+

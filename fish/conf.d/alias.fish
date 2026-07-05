@@ -24,3 +24,7 @@ alias dcu="docker compose up"
 alias pn="pnpm"
 alias pe="pnpm exec"
 alias pa="pnpm add"
+
+# herdr
+alias hr="herdr"
+alias hrp="herdr server stop"
