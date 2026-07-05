@@ -18,4 +18,4 @@
 	defaultBranch = main
 
 [ghq]
-	root = ~/project
+	root = ~/projects

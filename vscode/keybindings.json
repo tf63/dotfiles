@@ -565,4 +565,19 @@
     "command": "-workbench.panel.chat",
     "when": "workbench.panel.chat.view.copilot.active",
   },
+  {
+    "key": "ctrl+n",
+    "command": "-cursorDown",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "-cursorUp",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+t",
+    "command": "-editor.action.transposeLetters",
+    "when": "textInputFocus && !editorReadonly"
+  },
 ]
