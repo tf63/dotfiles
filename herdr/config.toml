@@ -12,13 +12,13 @@ copy_mode = "prefix+c"
 
 new_tab = "prefix+enter"
 rename_tab = "prefix+r"
-previous_tab = ["prefix+y", "prefix+ctrl+y"]
-next_tab = ["prefix+o", "prefix+ctrl+o"]
+previous_tab = ["prefix+u", "prefix+ctrl+u"]
+next_tab = ["prefix+i", "prefix+ctrl+i"]
 
 new_workspace = "prefix+shift+enter"
 rename_workspace = "prefix+shift+r"
-previous_workspace = ["prefix+i", "prefix+ctrl+i"]
-next_workspace = ["prefix+u", "prefix+ctrl+u"]
+previous_workspace = ["prefix+o", "prefix+ctrl+o"]
+next_workspace = ["prefix+y", "prefix+ctrl+y"]
 
 split_horizontal = "prefix+ctrl+,"
 split_vertical = "prefix+ctrl+."
