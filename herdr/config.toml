@@ -28,7 +28,7 @@ focus_agent = "prefix+1..9"
 [[keys.command]]
 key = "prefix+t"
 type = "popup"
-command = "exec \"${SHELL:-sh}\""
+command = "fish"
 description = "open scratch terminal"
 width = "90%"
 height = "90%"
