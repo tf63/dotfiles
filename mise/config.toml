@@ -16,7 +16,13 @@ fzf = "0.73.1"
 jq = "1.8.1"
 herdr = "0.7.5"
 superfile = "1.6.0"
+rg = "15.2.0"
+hunkdiff = "0.18.1"
 
 [tasks]
 show-config = { run = "bat ~/.config/mise/config.toml" }
 show-local-config = { run = "bat ~/.config/mise/config.local.toml" }
+
+hunk-diff = { dir = "{{cwd}}", run = "hunk diff --mode split --transparent-bg --theme midnight-ink" }
+hunk-diff-staged = { dir = "{{cwd}}", run = "hunk diff --staged --mode split --transparent-bg --theme midnight-ink" }
+hunk-show = { dir = "{{cwd}}", run = "hunk show --mode split --transparent-bg --theme midnight-ink" }

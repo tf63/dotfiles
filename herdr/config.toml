@@ -57,6 +57,14 @@ description = "run superfile"
 width = "90%"
 height = "90%"
 
+[[keys.command]]
+key = "prefix+n"
+type = "popup"
+command = "mise hunk-diff"
+description = "run hunk"
+width = "90%"
+height = "90%"
+
 [ui]
 show_agent_labels_on_pane_borders = true
 
