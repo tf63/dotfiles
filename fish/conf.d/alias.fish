@@ -1,19 +1,14 @@
-# git command -----------------------------------------------------------
+# git
 alias proot='cd $(git rev-parse --show-toplevel)'
-alias lg='lazygit'
 
-# git config --------------------------------------------------------
-alias gs="git status"
-alias gpl="git pull"
-alias gph="git push"
-
+# lazy
 alias lg="lazygit"
 alias ldr="lazydocker"
 
-# kitty config ------------------------------------------------------
+# kitty
 alias icat="kitty +kitten icat"
 
-# docker ------------------------------------------------------------
+# docker
 alias dc="docker compose"
 alias dce="docker compose exec"
 alias dcb="docker compose build"
@@ -28,3 +23,6 @@ alias pa="pnpm add"
 # herdr
 alias hr="herdr"
 alias hrp="herdr server stop"
+
+# yazi
+alias yz="yazi"
