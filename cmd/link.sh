@@ -4,6 +4,7 @@ ln -sf ~/projects/dotfiles/karabiner ~/.config/karabiner
 ln -sf ~/projects/dotfiles/fish ~/.config/fish
 ln -sf ~/projects/dotfiles/git ~/.config/git
 ln -sf ~/projects/dotfiles/kitty ~/.config/kitty
+ln -sf ~/projects/dotfiles/yazi ~/.config/yazi
 
 ln -sf ~/projects/dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
 ln -sf ~/projects/dotfiles/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
