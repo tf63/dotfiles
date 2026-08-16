@@ -2,6 +2,7 @@ onboarding = false
 
 [terminal]
 default_shell = "fish"
+new_cwd = "follow"
 
 [keys]
 prefix = "ctrl+f"
