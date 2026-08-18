@@ -2,7 +2,6 @@ onboarding = false
 
 [terminal]
 default_shell = "fish"
-new_cwd = "follow"
 
 [keys]
 prefix = "ctrl+f"
@@ -55,6 +54,14 @@ key = "prefix+s"
 type = "popup"
 command = "spf"
 description = "run superfile"
+width = "90%"
+height = "90%"
+
+[[keys.command]]
+key = "prefix+e"
+type = "popup"
+command = "fish -c 'yazi'"
+description = "run yazi"
 width = "90%"
 height = "90%"
 
