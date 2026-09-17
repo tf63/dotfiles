@@ -28,6 +28,6 @@
     { "command": "gh pr create", "include": ["--body-file"] },
     { "command": "gh pr review", "include": ["--body-file", "--comment"] },
     { "command": "gh pr comment" },
-    { "command": "gh api" },
+    { "command": "gh api" }
   ]
 }
