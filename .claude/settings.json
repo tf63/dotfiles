@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "includeCoAuthoredBy": false,
+  "permissions": {
+    "allow": [
+      "Bash(ls:*)",
+      "Bash(tree:*)",
+      "Bash(grep:*)",
+      "Bash(xargs grep:*)",
+      "Bash(touch:*)",
+      "Bash(cp -n:*)",
+      "Bash(mv:*)",
+      "Bash(mkdir:*)",
+      "Bash(find:*)",
+      "Bash(head:*)",
+      "Bash(tail:*)",
+      "Bash(pwd:*)",
+      "Bash(wc -l:*)",
+      "Bash(trash:*)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git show:*)",
+      "Bash(git log:*)",
+      "Bash(git branch -a)",
+      "Bash(gh pr view:*)",
+      "Bash(gh pr diff:*)",
+      "Bash(gh pr list:*)"
+    ],
+    "ask": [
+      "Bash(gh pr create:*)",
+      "Bash(gh pr review:*)",
+      "Bash(gh pr comment:*)",
+      "Bash(gh pr edit:*)"
+    ],
+    "deny": [
+      "Read(.env)",
+      "Read(.env.*)",
+      "Agent(Plan)",
+      "Agent(Explore)",
+      "Agent(claude)",
+      "Agent(statusline-setup)",
+      "Agent(claude-code-guide)",
+      "Agent(general-purpose)"
+    ]
+  },
+  "enabledMcpjsonServers": [],
+  "disabledMcpjsonServers": [],
+  "disableArtifact": true,
+  "companyAnnouncements": [
+    "これは dotfiles のリポジトリです"
+  ],
+  "skillOverrides": {
+    "artifact-design": "off"
+  },
+  "plansDirectory": ".claude/plans",
+  "autoMemoryDirectory": ".claude/memories"
+}

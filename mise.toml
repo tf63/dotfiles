@@ -1,0 +1,8 @@
+[tools]
+"go:github.com/tf63/vetol/cmd/vetol" = "v0.1.0"
+go = "1.26.0"
+
+[tasks]
+claude-general = 'claude --agent general-agent --permission-mode default'
+
+[env]
