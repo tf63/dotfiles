@@ -23,5 +23,14 @@ return {
         },
       },
     },
+    init = function()
+      vim.api.nvim_create_autocmd("VimEnter", {
+        callback = function()
+          if vim.fn.argc() == 0 then
+            require("snacks").explorer()
+          end
+        end,
+      })
+    end,
   },
 }
