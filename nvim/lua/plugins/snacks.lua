@@ -3,6 +3,11 @@ return {
     "folke/snacks.nvim",
     opts = {
       picker = {
+        layout = {
+          layout = {
+            width = 25,
+          },
+        },
         sources = {
           explorer = {
             hidden = true,
