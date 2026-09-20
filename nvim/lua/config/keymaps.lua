@@ -105,3 +105,18 @@ vim.keymap.set("i", "<C-S-n>", "<C-o>v<C-d>") -- 半ページ下まで選択開�
 vim.keymap.set("i", "<C-S-p>", "<C-o>v<C-u>") -- 半ページ上まで選択開始（挿入モード）
 vim.keymap.set("v", "<C-S-n>", "<C-d>") -- 選択範囲を半ページ下まで拡張
 vim.keymap.set("v", "<C-S-p>", "<C-u>") -- 選択範囲を半ページ上まで拡張
+
+-- ============================================================
+-- Shift+Ctrl+A / Shift+Ctrl+E で行単位の選択
+-- ============================================================
+-- ノーマルモード：Visual Modeに入りつつ行頭/行末まで選択
+vim.keymap.set("n", "<C-S-a>", "v0", { silent = true })
+vim.keymap.set("n", "<C-S-e>", "v$", { silent = true })
+
+-- 挿入モード：Visual Modeに入りつつ行頭/行末まで選択
+vim.keymap.set("i", "<C-S-a>", "<Esc>v0", { silent = true })
+vim.keymap.set("i", "<C-S-e>", "<Esc>v$", { silent = true })
+
+-- ビジュアルモード：選択範囲を行頭/行末まで拡張
+vim.keymap.set("v", "<C-S-a>", "0", { silent = true })
+vim.keymap.set("v", "<C-S-e>", "$", { silent = true })
