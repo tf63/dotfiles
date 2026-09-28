@@ -17,8 +17,8 @@ next_tab = ["prefix+i", "prefix+ctrl+i"]
 
 new_workspace = "prefix+shift+enter"
 rename_workspace = "prefix+shift+r"
-previous_workspace = ["prefix+o", "prefix+ctrl+o"]
-next_workspace = ["prefix+y", "prefix+ctrl+y"]
+previous_workspace = ["prefix+p", "prefix+ctrl+p"]
+next_workspace = ["prefix+n", "prefix+ctrl+n"]
 
 split_horizontal = "prefix+ctrl+,"
 split_vertical = "prefix+ctrl+."
@@ -66,7 +66,7 @@ width = "90%"
 height = "90%"
 
 [[keys.command]]
-key = "prefix+n"
+key = "prefix+o"
 type = "popup"
 command = "mise hunk-diff"
 description = "run hunk"
