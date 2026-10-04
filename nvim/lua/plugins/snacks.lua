@@ -22,8 +22,19 @@ return {
           },
         },
       },
+      image = {
+        enable = true,
+      },
     },
     init = function()
+      vim.api.nvim_set_hl(0, "SnacksPickerGitStatusUntracked", {
+        fg = "#a6e3a1",
+      })
+
+      vim.api.nvim_set_hl(0, "SnacksPickerPathHidden", {
+        fg = "#9999bb",
+      })
+
       vim.api.nvim_create_autocmd("VimEnter", {
         callback = function()
           if vim.fn.argc() == 0 then
