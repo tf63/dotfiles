@@ -30,48 +30,48 @@ key = "prefix+t"
 type = "popup"
 command = "fish"
 description = "open scratch terminal"
-width = "90%"
-height = "90%"
+width = "95%"
+height = "95%"
 
 [[keys.command]]
 key = "prefix+m"
 type = "popup"
 command = "lazygit"
 description = "run lazygit"
-width = "90%"
-height = "90%"
+width = "95%"
+height = "95%"
 
 [[keys.command]]
 key = "prefix+d"
 type = "popup"
 command = "lazydocker"
 description = "run lazydocker"
-width = "90%"
-height = "90%"
+width = "95%"
+height = "95%"
 
 [[keys.command]]
 key = "prefix+s"
 type = "popup"
 command = "spf"
 description = "run superfile"
-width = "90%"
-height = "90%"
+width = "95%"
+height = "95%"
 
 [[keys.command]]
 key = "prefix+e"
 type = "popup"
 command = "fish -c 'yazi'"
 description = "run yazi"
-width = "90%"
-height = "90%"
+width = "95%"
+height = "95%"
 
 [[keys.command]]
 key = "prefix+o"
 type = "popup"
 command = "mise hunk-diff"
 description = "run hunk"
-width = "90%"
-height = "90%"
+width = "95%"
+height = "95%"
 
 [ui]
 show_agent_labels_on_pane_borders = true
