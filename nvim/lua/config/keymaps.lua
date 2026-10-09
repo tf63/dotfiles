@@ -120,3 +120,7 @@ vim.keymap.set("i", "<C-S-e>", "<Esc>v$", { silent = true })
 -- ビジュアルモード：選択範囲を行頭/行末まで拡張
 vim.keymap.set("v", "<C-S-a>", "0", { silent = true })
 vim.keymap.set("v", "<C-S-e>", "$", { silent = true })
+
+vim.keymap.set("n", "<leader>W", "<cmd>noautocmd write<cr>", {
+  desc = "Save without formatting",
+})
