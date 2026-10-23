@@ -15,7 +15,7 @@ ln -sf ~/projects/dotfiles/home/.gitconfig ~/.gitconfig
 ln -sf ~/projects/dotfiles/home/.zshrc ~/.zshrc
 ln -sf ~/projects/dotfiles/home/.profile ~/.profile
 
-ln -sf ~/projects/dotfiles/mise/config.toml ~/.config/mise/config.toml
+ln -sf ~/projects/dotfiles/mise ~/.config/mise
 ln -sf ~/projects/dotfiles/herdr/config.toml ~/.config/herdr/config.toml
 
 ln -sf ~/projects/dotfiles/nvim ~/.config/nvim
