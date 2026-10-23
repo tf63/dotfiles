@@ -9,5 +9,6 @@
       "matchManagers": ["mise"],
       "groupName": "mise tools"
     }
-  ]
+  ],
+  "ignoreDeps": ["npm:@mermaid-js/mermaid-cli"]
 }
