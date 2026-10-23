@@ -511,12 +511,6 @@ url = "https://nodejs.org/dist/v24.22.1/node-v24.22.1-darwin-x64.tar.gz"
 checksum = "sha256:d2046d28c2c3dcd211ac5145c0bf30e2047ef9dfb306693c8c6e2eccd8b95fa5"
 url = "https://nodejs.org/dist/v24.22.1/node-v24.22.1-win-x64.zip"
 
-[[tools."npm:@github/copilot"]]
-version = "1.0.21"
-aube = { path = ".mise/locks/npm-github-copilot/1.0.21", digest = "sha256:2f2c921db8218f9ef2345923fa55df10b49b29f5d49b50f31096c6258f638578" }
-backend = "npm:@github/copilot"
-specifiers = ["1.0.21"]
-
 [[tools."npm:@mermaid-js/mermaid-cli"]]
 version = "11.15.0"
 aube = { path = ".mise/locks/npm-mermaid-js-mermaid-cli/11.15.0", digest = "sha256:69fb8e669b5e38a6c89738a95fb687e139185fae839729eef6c69986f7b4da93" }
