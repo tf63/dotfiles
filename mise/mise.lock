@@ -645,44 +645,51 @@ url_api = "https://api.github.com/repos/tree-sitter/tree-sitter/releases/assets/
 provenance = "github-attestations"
 
 [[tools.usage]]
-version = "5.1.0"
+version = "7.1.2"
 backend = "aqua:jdx/usage"
-specifiers = ["5.1.0"]
+specifiers = ["7.1.2"]
 
 [tools.usage."platforms.linux-arm64"]
-checksum = "sha256:6eb5a37fab31b928cfa10f239307812ab1b26f11e465f524302d7fd2c8ac4503"
-url = "https://github.com/jdx/usage/releases/download/v5.1.0/usage-aarch64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/jdx/usage/releases/assets/507607925"
+checksum = "sha256:5171193a0397cc054d5e009cbaf51799598241b8175b4bfd91f8640bbfc91a7a"
+checksum_source = "mise-versions"
+url = "https://github.com/jdx/usage/releases/download/v7.1.2/usage-aarch64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/jdx/usage/releases/assets/671924507"
 
 [tools.usage."platforms.linux-arm64-musl"]
-checksum = "sha256:e2056b06c8d13f109389d53e758b4e79208f01360dec996751bc48ce658eb200"
-url = "https://github.com/jdx/usage/releases/download/v5.1.0/usage-aarch64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/jdx/usage/releases/assets/507608014"
+checksum = "sha256:d4675f05c0a707b24e5b5bdac57c23b584209305e70adc11e616e8f26b36104f"
+checksum_source = "mise-versions"
+url = "https://github.com/jdx/usage/releases/download/v7.1.2/usage-aarch64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/jdx/usage/releases/assets/671925472"
 
 [tools.usage."platforms.linux-x64"]
-checksum = "sha256:788c103416d4ed8e335484a40886c9abf5879dd5394959727d5c0cc9f327902b"
-url = "https://github.com/jdx/usage/releases/download/v5.1.0/usage-x86_64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/jdx/usage/releases/assets/507607768"
+checksum = "sha256:185a79a3fb0cdc0a09e22bad5d197a47518ad3ea3cc5b6f1e53e9f7ae7908079"
+checksum_source = "mise-versions"
+url = "https://github.com/jdx/usage/releases/download/v7.1.2/usage-x86_64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/jdx/usage/releases/assets/671924363"
 
 [tools.usage."platforms.linux-x64-musl"]
-checksum = "sha256:a702c639f8e25d1e10f42ab37e09b8f73634c09b23c7abe2ebd6ab6f9665e99c"
-url = "https://github.com/jdx/usage/releases/download/v5.1.0/usage-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/jdx/usage/releases/assets/507608023"
+checksum = "sha256:da9ce7c2c0220f336b7ade208c7755ae3dd137642f90f6ec460ba821d809754b"
+checksum_source = "mise-versions"
+url = "https://github.com/jdx/usage/releases/download/v7.1.2/usage-x86_64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/jdx/usage/releases/assets/671925676"
 
 [tools.usage."platforms.macos-arm64"]
-checksum = "sha256:ca35e60afd2895ec0b5be9162dbef155a76384ce43573b1ab8a04fbb46e70cd9"
-url = "https://github.com/jdx/usage/releases/download/v5.1.0/usage-universal-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/jdx/usage/releases/assets/507609560"
+checksum = "sha256:febcc62e79cf7278e532b36073847812711b4e6e9a381663ca796a52b772ba33"
+checksum_source = "mise-versions"
+url = "https://github.com/jdx/usage/releases/download/v7.1.2/usage-universal-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/jdx/usage/releases/assets/671924039"
 
 [tools.usage."platforms.macos-x64"]
-checksum = "sha256:ca35e60afd2895ec0b5be9162dbef155a76384ce43573b1ab8a04fbb46e70cd9"
-url = "https://github.com/jdx/usage/releases/download/v5.1.0/usage-universal-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/jdx/usage/releases/assets/507609560"
+checksum = "sha256:febcc62e79cf7278e532b36073847812711b4e6e9a381663ca796a52b772ba33"
+checksum_source = "mise-versions"
+url = "https://github.com/jdx/usage/releases/download/v7.1.2/usage-universal-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/jdx/usage/releases/assets/671924039"
 
 [tools.usage."platforms.windows-x64"]
-checksum = "sha256:c0ef8c1c04917b4f2727134a10a3ab1afed9f251f677ab621c25b9cc85cad66b"
-url = "https://github.com/jdx/usage/releases/download/v5.1.0/usage-x86_64-pc-windows-msvc.zip"
-url_api = "https://api.github.com/repos/jdx/usage/releases/assets/507610030"
+checksum = "sha256:061fe944671b7348d034ccaf016c457f896597dbddc18ee2d6858bd88bdb1519"
+checksum_source = "mise-versions"
+url = "https://github.com/jdx/usage/releases/download/v7.1.2/usage-x86_64-pc-windows-msvc.zip"
+url_api = "https://api.github.com/repos/jdx/usage/releases/assets/671927107"
 
 [[tools.yazi]]
 version = "26.9.1"
