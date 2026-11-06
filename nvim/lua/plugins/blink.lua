@@ -6,6 +6,9 @@ return {
       keymap = {
         ["<C-y>"] = false,
       },
+      enabled = function()
+        return vim.bo.filetype ~= "markdown"
+      end,
     },
   },
 }
