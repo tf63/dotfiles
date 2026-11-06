@@ -517,6 +517,12 @@ aube = { path = ".mise/locks/npm-mermaid-js-mermaid-cli/11.15.0", digest = "sha2
 backend = "npm:@mermaid-js/mermaid-cli"
 specifiers = ["11.15.0"]
 
+[[tools.portless]]
+version = "0.16.0"
+aube = { path = ".mise/locks/portless/0.16.0", digest = "sha256:0efc452665bce25ad9ced38fa9a91770f0b7ca9b4853506b80c99e886fa78cdc" }
+backend = "npm:portless"
+specifiers = ["0.16.0"]
+
 [[tools.rg]]
 version = "15.2.0"
 backend = "aqua:BurntSushi/ripgrep"

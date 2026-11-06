@@ -24,6 +24,7 @@ yazi = "26.9.1"
 tree-sitter = "0.27.1"
 "npm:@mermaid-js/mermaid-cli" = "11.15.0"
 lazydocker = "0.25.2"
+portless = "0.16.0"
 
 [tasks]
 show-config = { run = "bat ~/.config/mise/config.toml" }
