@@ -1,4 +1,6 @@
 .DS_Store
+
+.mise/locks/mise.local
 mise.local.toml
 mise.local.lock
 
