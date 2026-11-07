@@ -1,7 +1,6 @@
 [mgr]
 ratio = [1, 2, 7]
+show_hidden = true
 
 [opener]
-edit = [
-  { run = "nvim %s", block = true}
-]
+edit = [{ run = "nvim %s", block = true }]
