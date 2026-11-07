@@ -7,7 +7,14 @@ return {
         ["<C-y>"] = false,
       },
       enabled = function()
-        return vim.bo.filetype ~= "markdown"
+        local disabled_filetypes = {
+          markdown = true,
+          toml = true,
+          yaml = true,
+          json = true,
+        }
+
+        return not disabled_filetypes[vim.bo.filetype]
       end,
     },
   },
