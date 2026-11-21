@@ -125,3 +125,35 @@ vim.keymap.set("v", "<C-S-e>", "$", { silent = true })
 vim.keymap.set("n", "<leader>W", "<cmd>noautocmd write<cr>", {
   desc = "Save without formatting",
 })
+
+vim.keymap.set({ "n", "i" }, "<D-s>", "<cmd>w<CR>", { desc = "Save file" })
+
+vim.keymap.set("n", "<C-b>", function()
+  for _, win in ipairs(vim.api.nvim_list_wins()) do
+    local buf = vim.api.nvim_win_get_buf(win)
+    if vim.bo[buf].filetype == "snacks_picker_list" then
+      vim.api.nvim_set_current_win(win)
+      return
+    end
+  end
+
+  Snacks.explorer()
+end, { desc = "Focus Explorer" })
+
+local function move_skip_explorer(dir)
+  return function()
+    local prev = vim.api.nvim_get_current_win()
+    vim.cmd("wincmd " .. dir)
+    local ft = vim.bo.filetype
+    if ft == "neo-tree" or ft == "snacks_picker_list" then
+      vim.api.nvim_set_current_win(prev)
+    end
+  end
+end
+
+for _, lhs in ipairs({ "<C-S-[>", "<C-{>" }) do
+  vim.keymap.set("n", lhs, move_skip_explorer("h"), { desc = "Left window (skip explorer)" })
+end
+for _, lhs in ipairs({ "<C-S-]>", "<C-}>" }) do
+  vim.keymap.set("n", lhs, move_skip_explorer("l"), { desc = "Right window (skip explorer)" })
+end
