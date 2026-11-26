@@ -2,6 +2,11 @@
 
 lockfile_version = 3
 
+[[tools.aws]]
+version = "2.38.5"
+backend = "aqua:aws/aws-cli"
+specifiers = ["2.38.5"]
+
 [[tools.bat]]
 version = "0.26.1"
 backend = "aqua:sharkdp/bat"
