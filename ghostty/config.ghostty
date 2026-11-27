@@ -1,0 +1,32 @@
+# ==========================================
+# COLORS
+# ==========================================
+
+# 文字色
+foreground = FFF3E0
+
+# 背景色
+background = 313338
+
+# 選択
+selection-foreground = EEEEEE
+selection-background = 474A69
+
+# カーソル
+cursor-color = A593E0
+cursor-opacity = 1.0
+cursor-style-blink = false
+
+# ==========================================
+# BACKGROUND
+# ==========================================
+
+# 背景
+background-opacity = 1.0
+background-image = ~/.config/ghostty/background.png
+
+# 背景画像の表示方法
+background-image-fit = cover
+background-image-position = center
+background-image-opacity = 1.0
+
