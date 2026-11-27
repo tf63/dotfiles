@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-brew bundle dump --no-vscode --force --no-npm
+brew bundle dump --no-vscode --force --no-npm --no-go

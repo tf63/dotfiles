@@ -1,4 +1,4 @@
-#!/opt/homebrew/bin/fish
+#!/usr/bin/env bash
 ln -sf ~/projects/dotfiles/.hammerspoon ~/.hammerspoon
 ln -sf ~/projects/dotfiles/karabiner ~/.config/karabiner
 ln -sf ~/projects/dotfiles/fish ~/.config/fish

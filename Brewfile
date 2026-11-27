@@ -22,5 +22,3 @@ cask "font-symbols-only-nerd-font"
 cask "ghostty"
 # Desktop automation application
 cask "hammerspoon"
-go "cmd/go"
-go "cmd/gofmt"
