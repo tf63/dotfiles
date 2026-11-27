@@ -26,6 +26,7 @@ tree-sitter = "0.27.2"
 lazydocker = "0.25.2"
 portless = "0.17.0"
 aws = { version = "2.38.5", symlink_bins = "true" }
+uv = "0.13.9"
 
 [tasks]
 show-config = { run = "bat ~/.config/mise/config.toml" }
