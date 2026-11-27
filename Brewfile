@@ -16,7 +16,11 @@ brew "tectonic"
 brew "tree"
 # Executes a program periodically, showing output fullscreen
 brew "watch"
-# Desktop automation application
-cask "hammerspoon"
 cask "font-jetbrains-mono-nerd-font"
 cask "font-symbols-only-nerd-font"
+# Terminal emulator that uses platform-native UI and GPU acceleration
+cask "ghostty"
+# Desktop automation application
+cask "hammerspoon"
+go "cmd/go"
+go "cmd/gofmt"
